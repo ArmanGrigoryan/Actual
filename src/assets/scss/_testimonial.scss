@@ -1,0 +1,215 @@
+.rs-testimonial {
+    &.style2 {
+        .donation-part {
+            img {
+                border-radius: 5px;
+                margin-bottom: 22px;
+            }
+        }
+        .testi-wrap {
+            overflow: hidden;
+            background: $grayColor;
+            border-radius: 5px;
+            padding: 30px;
+            .img-part {
+                max-width: 209px;
+                float: left;
+                margin-right: 58px;
+                img {
+                    border-radius: 5px;
+                }
+            }
+            .content-part {
+                .desc {
+                    font-size: 22px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    color: $titleColor2;
+                    display: inline;
+                    position: relative;
+                    &:before,
+                    &:after {
+                        content: "\f151";
+                        font-family: Flaticon;
+                        font-size: 20px;
+                        color: $titleColor2;
+                    }
+                    &:after {
+                        position: relative;
+                        bottom: -7px;
+                        right: -8px;
+                    }
+                    &:before {
+                        transform: rotateY(180deg);
+                        position: absolute;
+                        left: -30px;
+                        top: -13px;
+                    }
+                    &.title-color{
+                        color: $titleColor;
+                    }
+                }
+                .info {
+                    margin-top: 20px;
+                    color: $bodyColor;
+                    .name {
+                        margin: 0;
+                        font-weight: 600;
+                    }
+                }
+                &.new-content{
+                    .desc {
+                        font-size: 22px;
+                        font-weight: 600;
+                        line-height: 30px;
+                        color: $titleColor;
+                        display: inline;
+                        position: relative;
+                        &:before,
+                        &:after {
+                            content: "\f151";
+                            font-family: Flaticon;
+                            font-size: 20px;
+                            color: $titleColor;
+                        }
+                        &:after {
+                            position: relative;
+                            bottom: -7px;
+                            right: -8px;
+                        }
+                        &:before {
+                            transform: rotateY(180deg);
+                            position: absolute;
+                            left: -30px;
+                            top: -13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.main-home{
+        background: url(media/bg/main-home.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        .testi-item {
+            position: relative;
+            .author-desc {
+                padding: 70px 15px;
+                background-color: #171F3296;
+                border-radius: 18px;
+                min-height: 420px;
+                .desc {
+                    text-align: center;
+                    position: relative;
+                    color: $whiteColor;
+                    padding: 80px 40px 30px;
+                    font-size: 20px;
+                    line-height: 33px;
+                    font-weight: 500;
+                    font-style: italic;
+                    .quote {
+                        width: 66px;
+                        top: -13px;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    &:before{
+                        content: none;
+                    }
+                }
+                .author-img {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: 80px;
+                    img {
+                        width: auto;
+                        border-radius: 50%;          
+                        background-color: #c9bfbf;              
+                    }
+                }
+            }
+            .author-part {
+                text-align: center;
+                padding-top: 45px;
+                .name {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 45px;
+                    color: $whiteColor;
+                    display: block;
+                }
+                .designation {
+                    font-size: 16px;
+                    color: $whiteColor;
+                }
+            }
+        }
+
+        .owl-stage-outer {
+            padding: 10px;
+            margin: -10px;
+        }
+    }
+}
+
+/* Lg Device :1199px. */
+@media #{$lg} {
+    .rs-testimonial.style2 .testi-wrap .img-part {
+        max-width: 200px;
+        margin-right: 50px;
+    }
+    .rs-testimonial.style2 .testi-wrap .content-part {
+        display: block;
+        padding-right: 15px;
+    }
+    .rs-testimonial.style2 .testi-wrap .content-part .info {
+        margin-top: 20px;
+    }
+}
+
+/* Tablet desktop :991px. */
+@media #{$md} {
+    .rs-testimonial.style2 .donation-part {
+        max-width: 600px;
+    }
+    .rs-testimonial.style2 .testi-wrap .content-part .desc {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .rs-testimonial.style2 .testi-wrap .content-part .name {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+/* Tablet :767px. */
+@media #{$sm} {
+    .rs-testimonial.main-home .testi-item .author-desc .desc {
+        font-size: 18px;
+        padding: 65px 15px 15px;
+    }
+    .rs-testimonial.style2 .testi-wrap {
+        padding: 15px 25px;
+    }
+}
+
+/* Large Mobile :575px. */
+@media #{$xs} {
+    .rs-testimonial.style2 .testi-wrap .img-part {
+        float: unset;
+        width: auto;
+        margin-right: 0;
+    }
+    .rs-testimonial.style2 .testi-wrap .content-part {
+        padding: 25px;
+        padding-left: 40px;
+    }
+    .rs-testimonial.style2 .testi-wrap .content-part .info {
+        float: unset;
+    }
+}

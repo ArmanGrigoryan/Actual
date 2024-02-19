@@ -1,0 +1,23 @@
+/* button style */
+.btn {
+	-moz-user-select: none;
+	border: medium none;
+	display: inline-block;
+	font-size: 14px;
+	margin-bottom: 0;
+	padding: 20px 40px;
+	text-align: center;
+	text-transform: capitalize;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	vertical-align: middle;
+	white-space: nowrap;
+	border-radius: 5px;
+	position: relative;
+}
+.breadcrumb > .active {
+	color: #888;
+}

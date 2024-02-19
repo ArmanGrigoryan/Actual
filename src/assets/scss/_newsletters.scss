@@ -1,0 +1,96 @@
+.rs-newsletter {
+    &.style1 {
+        .newsletter-wrap {
+            border-radius: 12px;
+            padding: 60px 70px;
+            position: relative;
+            .content-part{
+                .sec-title{
+                    display: flex;
+                    align-items: center;
+                    .title-icon{
+                        img{
+                            max-width: 50px;
+                            margin-right: 20px;
+                        }
+                    }
+
+                    .title {
+                        font-size: 18px;
+                    }
+                }
+            }
+            .newsletter-form {
+                position: relative;
+                border-radius: 6px;
+                overflow: hidden;
+                input {
+                    background: $whiteColor;
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    color: $bodyColor;
+                    padding: 15px 20px;
+                }
+                button {
+                    background: $secondaryColor;
+                    border: none;
+                    outline: none;
+                    color: $whiteColor;
+                    padding: 15px 30px;
+                    transition: $transition;
+                    &:hover {
+                        background: lighten($secondaryColor, 5%);
+                    }
+                }
+            }
+        }
+        &.modify1{
+            .newsletter-wrap {
+                background: url(media/bg/newslatter-bg15.jpg);
+                .newsletter-form {
+                    button {
+                        background: $primaryColor;
+                        &:hover {
+                            background: $primaryColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.orange-color {
+        .newsletter-wrap {
+            background: #171F32;
+            .newsletter-form {
+                button {
+                    background: $orangeColor;
+                    &:hover {
+                        background: lighten($orangeColor, 5%);
+                    }
+                }
+            }
+        }
+    } 
+}
+
+/* Tablet :767px. */
+@media #{$sm} {
+    .rs-newsletter.style1 .newsletter-wrap .newsletter-form {
+        max-width: 500px;
+    }
+}
+
+/* Large Mobile :575px. */
+@media #{$xs} {
+    .rs-newsletter.style1 .newsletter-wrap {
+        padding: 40px 20px;
+    }
+}
+
+/* small mobile :480px. */
+@media #{$mobile} {
+    .rs-newsletter.style1 .newsletter-wrap .newsletter-form button {
+        padding: 10px 20px;
+    }
+}

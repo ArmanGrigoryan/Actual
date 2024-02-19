@@ -1,0 +1,372 @@
+.main-menu nav > ul > li > a {
+    display: block;
+    background: transparent;
+    text-transform: capitalize;
+}
+
+.full-width-header{
+    .rs-header{
+
+        .menu-area {
+            padding-top: 15px;
+            padding-bottom: 5px;
+            transition: .2s all ease 0s;
+            position: fixed;
+            left: 0;
+            margin: auto;
+            top: 0;
+            width: 100%;
+
+            .logo-area{
+                a{
+                    img {
+                        max-height: 90px;
+                    }
+                    .sticky-logo{
+                        display: none;
+                    }
+                }
+            }
+            .responsive-logo {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                display: none;
+                img {
+                    max-height: 90px;
+                }
+            }
+            .categories-btn {
+                position: relative;
+                .cat-btn {
+                    display: inline-flex;
+                    align-items: center;
+                    background: transparent;
+                    padding: 0;
+                    border: none;
+                    outline: unset;
+                    color: $whiteColor;
+                    text-transform: uppercase;
+                    i {
+                        margin-right: 5px;
+                    }
+                    &:hover {
+                        i {
+                            color: $primaryColor;
+                        }
+                    }
+                }
+            }
+            .rs-menu-area {
+                float: none;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+            .main-menu{
+				.mobile-menu {
+					display: none;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 90px;
+                    line-height: 90px;
+
+                    .mobile-normal-logo {
+                        float: left;
+                        display: block;
+                        img {
+                            max-height: 90px;
+                        }
+                    }
+                    .mobile-sticky-logo {
+                        float: left;
+                        display: none;
+                        img {
+                            max-height: 90px;
+                        }
+                    }
+                    .logo {
+                        img {
+                            max-height: 90px;
+                        }
+                    }
+                    .rs-menu-toggle{
+                        cursor: pointer;
+                        color: $whiteColor;
+                        font-size: 25px;
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                        &.primary {
+                            color: $primaryColor;
+                        }
+                        &.secondary {
+                            color: $secondaryColor;
+                        }
+                    }
+                    &.fixed-width {
+                        max-width: 720px;
+                        margin: 0 auto;
+                    }
+				}
+                .rs-menu{
+                    ul{
+                        &.nav-menu{
+                            position: relative;
+                            display: inline-block;
+                            li{
+                                display: inline-block;
+                                margin-right: 32px;
+                                margin-left: 0;
+                                padding: 0;
+
+                                a {
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    padding: 0;
+								    &:before {
+										display: none;
+								    }
+                                    &:hover{
+                                        color: #bbb;
+                                    }                                   
+                                }
+                                &.current-menu-item {
+                                    > a {
+                                        color: #bbb;
+                                    }
+                                }
+                                &:last-child{
+                                    margin-right: 0;
+                                    a {
+                                        margin-right: 0;
+                                    }
+                                    i{
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    ul li a:hover,
+                    ul li a.active-menu,
+                    ul li.current-menu-item > a{
+                        color: #fff; 
+						background: unset;
+                    }
+                }
+            }
+            &.sticky {
+                box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.07);
+                z-index: 9999;
+                -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+                background: #fff;
+                z-index: 999;
+
+                .logo-area{
+                    a{
+                        .sticky-logo{
+                            display: block;
+                            max-height: 90px;
+                        }
+                        .normal-logo{
+                            display: none;
+                        }
+                    }
+                }         
+            }
+        }
+    }
+
+    &.home8-style4{
+        width: 100%;
+        z-index: 997;
+
+        .rs-header{
+            .menu-area{
+                .rs-menu-area {
+                    .main-menu{
+                        .rs-menu{
+                            ul{
+                                &.nav-menu{
+                                    li{
+                                        a {
+                                            height: 90px;
+                                            line-height: 90px;
+                                            position: relative;
+
+                                            &::after {
+                                                content: "";
+                                                height: 2px;
+                                                position: absolute;
+                                                transition: all 0.25s ease;
+                                                background-color: $orangeColor;
+                                                width: 0;
+                                                bottom: 20px;
+                                                left: 0;
+                                            }
+                                            &:hover{
+                                                color: $orangeColor;
+                                                &::after {
+                                                    width: 100%;
+                                                }
+                                            }
+                                        }
+                                        &.current-menu-item {
+                                            > a::after {
+                                                content: "";
+                                                height: 2px;
+                                                position: absolute;
+                                                background-color: $orangeColor;
+                                                width: 100%;
+                                                bottom: 20px;
+                                                left: 0;
+                                            }
+                                        }                                        
+                                    }
+                                }
+                            }
+                        }                        
+                    }
+                }
+            }
+        }  
+        .right_menu_togle .close-btn #nav-close {
+            background: $primaryColor;
+        }
+        &.main-home{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            .rs-header {
+                .menu-area{
+                    .rs-menu-area {
+                        .main-menu{
+                            .rs-menu{
+                                ul{
+                                    &.nav-menu{
+                                        li{
+                                            a {
+                                                color: $whiteColor;
+                                            } 
+                                            &.current-menu-item {
+                                                > a {
+                                                    color: $orangeColor;
+                                                }  
+                                            }  
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.menu-sticky.sticky {
+                        background: $whiteColor;
+                        .rs-menu-area {
+                            .main-menu{
+                                .rs-menu{
+                                    ul{
+                                        &.nav-menu{
+                                            li{
+                                                a {
+                                                    color: $titleColor;
+
+                                                    &::after {
+                                                        content: "";
+                                                        height: 2px;
+                                                        position: absolute;
+                                                        background-color: $primaryColor;
+                                                        width: 0;
+                                                        bottom: 20px;
+                                                        left: 0;
+                                                    }
+                                                    &:hover{
+                                                        &::after {
+                                                            width: 100%;
+                                                        }
+                                                    }
+                                                    &:last-child{
+                                                        margin-right: 0;
+                                                    }
+                                                }
+                                                &.current-menu-item {
+                                                    > a {
+                                                        position: relative;
+                                                        color: $primaryColor;
+                                                    }
+                                                    > a::after {
+                                                        content: "";
+                                                        height: 2px;
+                                                        position: absolute;
+                                                        background-color: $primaryColor;
+                                                        width: 100%;
+                                                        bottom: 20px;
+                                                        left: 0;
+                                                    }
+                                                }                                        
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media #{$md} {
+    .full-width-header {
+        .rs-header {
+            .menu-area {
+                position: static;
+                z-index: 99;
+                &.sticky {
+                    position: static;
+                    .main-menu {
+                        .mobile-menu {
+                            .mobile-normal-logo {
+                                display: none;
+                            }
+                            .mobile-sticky-logo {
+                                display: block;
+                            }
+                        } 
+                    }                                       
+                }
+                .rs-menu-area {
+                    .main-menu {
+                        .mobile-menu {
+                            .normal-logo {
+                                width: 180px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media #{$mobile} {
+    .full-width-header {
+        .rs-header {
+            .menu-area {
+                .rs-menu-area {
+                    .main-menu {
+                        .mobile-menu {
+                            .normal-logo {
+                                width: 150px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

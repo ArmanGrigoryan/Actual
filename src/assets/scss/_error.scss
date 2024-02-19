@@ -1,0 +1,19 @@
+.rs-page-error{
+    padding: 220px 20px;
+    .error-text {
+        color: $titleColor;
+        text-align: center;
+        .error-code {
+            font-size: 100px;
+            color: $titleColor;
+        }
+        h3.error-message {
+            color: $titleColor;
+        }
+    }
+} 
+@media #{$sm} {
+    .rs-page-error {
+        padding: 150px 20px;
+    }
+}

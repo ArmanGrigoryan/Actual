@@ -1,0 +1,58 @@
+// Font Family
+$bodyFont: 'Nunito', sans-serif;
+$titleFont: 'Nunito', sans-serif;
+$fontAwesome: "FontAwesome";
+
+// Colors
+// $primaryColor:     #99041d;
+$primaryColor:     rgba(48, 32, 197, 0.993);
+$secondaryColor:   #273c66;
+$secondaryColor2:  #1c335f;
+$titleColor:       #111111;
+$titleColor2:      #112958;
+$titleColor3:      #394459;
+$titleColor4:      #031a3d;
+$titleColor5:      #101010;
+$titleColor6:      #333333;
+$titleColor7:      #171F32;
+$whiteColor:       #ffffff;
+$lighterColor:     #f6f6f6;
+$lighterColor2:    #eee;
+$bodyColor:        #505050;
+$bodyColor2:       #363636;
+$darkColor:        #393939;
+$bodyColor3:       #54647b;
+$grayColor:        #f3f8f9;
+$graybg:           #f3f8f9;
+$darkGray:         #626262;
+$secbg:            #f3f8f9;
+$metaColor:        #54647b;
+$orangeColor:      #ff5421;
+$purpleColor:      #c701f1;
+$yellowColor:      #f4bf00;
+$yellowLiteColor:  #fcb903;
+$greenColor:       #0c8b51;
+$closeIconColor:   #3a3a3a;
+// Gradient Backgrounds
+$gradient-bg: linear-gradient(180deg, $secondaryColor 0%, $orangeColor 100%);
+
+// Common
+$header_transition: all .1s ease-in-out;
+$transition: all .3s ease;
+
+// Responsive Variables
+$laptop_max: 'only screen and (max-width: 1700px)';
+$laptop: 'only screen and (max-width: 1600px)';
+$xl : 'only screen and (max-width: 1366px)';
+$lg : 'only screen and (max-width: 1199px)';
+$only_lg : 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$lg_to_sm : 'only screen and  (max-width: 1199px) and (min-width: 768px)';
+$md:'only screen and (max-width: 991px)';
+$sm: 'only screen and (max-width: 767px)';
+$xs: 'only screen and (max-width: 575px)';
+$mobile: 'only screen and (max-width: 480px)';
+
+$white: $whiteColor;
+$black: #333333;
+$theme-color: #096bd8;
+$footer-bg:#091b29;

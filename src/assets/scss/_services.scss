@@ -1,0 +1,49 @@
+@media #{$only_lg} {
+    .rs-services {
+        &.main-home{
+            &.style1 {
+                .services-item {
+                    padding: 30px;
+                    .services-content{
+                        .services-text{
+                            .services-title {
+                                font-size: 19px;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media #{$md} {
+    .rs-services {
+        &.main-home{
+            &.style1{
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media #{$sm} {
+    .rs-services {
+        &.main-home{
+            .services-item {
+                .services-content{
+                    .services-text{
+                        .services-title {
+                            font-size: 20px;
+                            margin-bottom: 8px;
+                        }
+                    }
+                }
+            }
+            &.style1{
+                margin-top: 0;
+            }
+        }
+    }
+}
