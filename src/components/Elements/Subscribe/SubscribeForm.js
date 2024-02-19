@@ -50,7 +50,7 @@ const CustomForm = () => {
                     disabled={disabled} 
                     onClick={clickHandler(subscribe)}
                 >
-                    { status ? "Ուղարկված!" : "Ուղարկել" }
+                    { status ? "Ուղարկված է!" : "Ուղարկել" }
                 </button>
             </div>
             )}

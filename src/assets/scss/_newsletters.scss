@@ -2,7 +2,7 @@
     &.style1 {
         .newsletter-wrap {
             border-radius: 12px;
-            padding: 60px 70px;
+            padding: 50px;
             position: relative;
             .content-part{
                 .sec-title{
@@ -33,27 +33,15 @@
                     padding: 15px 20px;
                 }
                 button {
-                    background: $secondaryColor;
                     border: none;
                     outline: none;
-                    color: $whiteColor;
-                    padding: 15px 30px;
                     transition: $transition;
+                    padding: 15px 30px;
+                    text-wrap: nowrap;
+                    color: $whiteColor;
+                    background: $orangeColor;
                     &:hover {
-                        background: lighten($secondaryColor, 5%);
-                    }
-                }
-            }
-        }
-        &.modify1{
-            .newsletter-wrap {
-                background: url(media/bg/newslatter-bg15.jpg);
-                .newsletter-form {
-                    button {
-                        background: $primaryColor;
-                        &:hover {
-                            background: $primaryColor;
-                        }
+                        background: lighten($orangeColor, 5%);
                     }
                 }
             }
@@ -62,14 +50,6 @@
     &.orange-color {
         .newsletter-wrap {
             background: #171F32;
-            .newsletter-form {
-                button {
-                    background: $orangeColor;
-                    &:hover {
-                        background: lighten($orangeColor, 5%);
-                    }
-                }
-            }
         }
     } 
 }
@@ -86,11 +66,12 @@
     .rs-newsletter.style1 .newsletter-wrap {
         padding: 40px 20px;
     }
-}
 
-/* small mobile :480px. */
-@media #{$mobile} {
-    .rs-newsletter.style1 .newsletter-wrap .newsletter-form button {
-        padding: 10px 20px;
+    .rs-newsletter.style1 .newsletter-wrap .newsletter-form input {
+        padding: 15px 10px;
+    }
+
+    .rs-newsletter.orange-color .newsletter-wrap .newsletter-form button {
+        padding: 10px;
     }
 }

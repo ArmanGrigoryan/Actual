@@ -39,7 +39,8 @@ const ModalVideo = ({
             height={1920}
         >
             { isOpen && <iframe 
-                className={`sm-mr-10 radius-20 open-iframe border-none overflow-hidden max-height-inherit`}
+                id="open-iframe"
+                className={`radius-20 open-iframe border-none overflow-hidden max-height-inherit`}
                 width={videoWidth}
                 height={videoHeight}
                 src={videoUrl}

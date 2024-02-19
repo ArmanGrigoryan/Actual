@@ -60,6 +60,7 @@
                     align-items: flex-start;
                     gap: 20px;
                     padding: 10px 0;
+                    line-height: 20px;
 
                     &.gapper {
                         gap: 40px;
@@ -96,7 +97,7 @@
                 .single-price-text {
                     font-size: 10px;
                     position: absolute;
-                    bottom: 8px;
+                    bottom: 2px;
                     left: 50%;
                     transform: translateX(-50%);
                 }

@@ -64,7 +64,7 @@ const CourseSidebar = () => {
                         <span className="value">{course.disabled ? 0 : course.studentQuantity}</span>
                     </li>
 
-                    <li className="assessments-feature">
+                    <li className="grads-feature">
                         <div>
                             <i className="fa fa-check-square-o"></i>
                             <span className="label">Գնահատականներ</span>
@@ -72,7 +72,7 @@ const CourseSidebar = () => {
                         <span className="value">{course.estimations ? "Այո" : "Ոչ"}</span>
                     </li>
 
-                    <li className="assessments-feature">
+                    <li className="certificate-feature">
                         <div>
                             <i className="fa fa-address-card-o"></i>
                             <span className="label">Սերտիֆիկատ</span>
@@ -84,7 +84,7 @@ const CourseSidebar = () => {
             <div className="btn-part radius-12 mt-30">
                 {
                     !course.disabled ?
-                    <button className="btn readon orange pointer-events-none">
+                    <button className={`btn readon orange pointer-events-none ${course.singlePricing ? "bottom-text" : ""}`}>
                         { course.oldPrice && <span className='text-decoration-line-through h5 mr-10 d-inline-block'>{ course.oldPrice }</span> }
                         <span className='h5 mr-10'>{ course.price }</span> 
                         <span className='h6 mr-10 d-inline-block'>ՀՀ դրամ</span>

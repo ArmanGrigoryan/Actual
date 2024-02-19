@@ -18,7 +18,7 @@ const Videos = () => {
         <div className="rs-video-home9" style={bgStyle}>
             <div className={`img-part media-icon yellow-color ${isOpen ? "overlay" : ""}`}>
                 <ModalVideo
-                    videoUrl="https://www.youtube.com/embed/NZM6f7-9lL8?autoplay=1&autoPlay=1&start=0&vq=hd720"
+                    videoUrl="https://www.youtube.com/embed/NZM6f7-9lL8?autoplay=1&start=0&vq=hd720"
                     isOpen={isOpen}
                     closeHandler={toggleModal}
                 />

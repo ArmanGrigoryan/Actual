@@ -12,8 +12,13 @@
     }
 
     &:has(.image-preview-modal) {
-        ::-webkit-scrollbar-thumb, ::-webkit-scrollbar {
-            visibility: hidden;
+        // ::-webkit-scrollbar-thumb, ::-webkit-scrollbar {
+        //     visibility: hidden;
+        //     transition: $transition;
+        // }
+
+        body {
+            overflow: hidden;
         }
 
         .intro-section .video-column {
@@ -30,7 +35,6 @@ body {
     font-family: $bodyFont;
     color: $bodyColor;
     vertical-align: baseline;
-    overflow-x: hidden;
     margin: 0
 }
 ::-webkit-scrollbar {
@@ -276,10 +280,6 @@ ul {
 	-ms-flex-align: flex-end;
 	-webkit-align-items: flex-end;
 	align-items: flex-end;
-}
-/* Slick Slider */
-.slick-list {
-    margin: -15px;
 }
 /* item */  
 .slick-slide{
@@ -1118,6 +1118,10 @@ select,
 .rodal-dialog {
     max-height: 85vh;
     box-shadow: none;
+
+    * {
+        border: none !important;
+    }
 }
 
 .slim-iframe .rodal-dialog {
@@ -1268,7 +1272,7 @@ select,
         height: 600px;
     }
     .rodal-dialog {
-        max-height: 70vh;
+        max-height: 75vh;
     }
     .md-gap-20 {
         gap: 20px;
@@ -1284,6 +1288,10 @@ select,
     }
     .rs-team.style1 {
         flex-direction: column;
+
+        li {
+            line-height: 20px;
+        }
     }
     .mobile-menu-part.open {
         width: 100%;
@@ -1308,9 +1316,6 @@ select,
             line-height: 16px;
         }
     }
-    .rodal-dialog {
-        max-height: 60vh;
-    }
     .sm-height-400 {
         height: 400px;
     }
@@ -1319,6 +1324,11 @@ select,
 @media #{$xs} { 
     .readon {
         padding: 15px 30px !important;
+
+        &.bottom-text {
+            padding: 15px 30px 25px !important;
+        }
+
         font-size: 15px;
     }
     .absolute-description.expanded {
@@ -1344,7 +1354,9 @@ select,
     .readon.orange-btn {
         font-size: 14px;
     }
-    .rodal-dialog {
-        max-height: 45vh;
+    .absolute-description {
+        span {
+            font-size: 24px;
+        }
     }
 }

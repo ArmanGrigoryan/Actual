@@ -123,6 +123,10 @@
     .image-preview-modal-container {
         padding: 0 40px;
     }
+    .image-preview-modal-container .item {
+        height: 90vh;
+        object-fit: cover;
+    }
     .image-preview-modal-container .close-icon {
         top: 0;
         right: 0;
