@@ -2,7 +2,7 @@ export const getCourses = async () => {
     const data = await fetch("/courses.json", {
         "Content-type": "application/json",
     });
-    const result = await data.json();
+    const result = await new Promise(res => setTimeout(() => res(data.json()), 500));
 
     return result;
 }
@@ -11,7 +11,7 @@ export const getEvents = async () => {
     const data = await fetch("/events.json", {
         "Content-type": "application/json",
     });
-    const result = await data.json();
+    const result = await new Promise(res => setTimeout(() => res(data.json()), 500));
 
     return result;
 }

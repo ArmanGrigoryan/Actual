@@ -3,6 +3,8 @@ import SectionTitle from 'comp/Common/SectionTitle';
 import SingleCard from 'pages/course/course-single/SingleCard';
 import { useQuery } from 'react-query';
 import { getCourses } from 'api';
+import BarLoader from "react-spinners/BarLoader";
+import { LoadingSpinnerSettings } from 'helpers';
 
 const Courses = () => {
     const { data, isFetched } = useQuery("courses", getCourses);
@@ -31,7 +33,7 @@ const Courses = () => {
                                 />
                             </div>
                         )) :
-                        null
+                        <BarLoader color="rgba(48, 32, 197)" cssOverride={LoadingSpinnerSettings} />
                     }
                 </div>
             </div>

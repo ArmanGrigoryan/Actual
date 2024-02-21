@@ -11,9 +11,7 @@ const Footer = (props) => {
     const emailSubject = "Հետադարձ կապ";
     const emailBody = "Բարև Ձեզ, ես ցանկանում եմ տեղեկանալ դասընթացների մասին ավելի մանրամասն։ Կարող եք զանգահարել՝ +374";
 
-    useEffect(() => {
-        setTimeout(() => setVisible(true))
-    }, [])
+    useEffect(() => setTimeout(() => setVisible(true)), []);
 
     return (
         <footer className={footerClass ? footerClass : 'rs-footer'}>
@@ -68,7 +66,7 @@ const Footer = (props) => {
             </div>
 
             <div className="footer-bottom">
-                <div className="container wider">
+                <div className="container wider m-0">
                     <div className="row y-middle">
                         <div className='legal-links'>
                             <div className="col-lg-6 text-left">

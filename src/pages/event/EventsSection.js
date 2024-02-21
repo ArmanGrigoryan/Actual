@@ -1,14 +1,16 @@
 import React from 'react';
+import SingleCard from './event-single/SingleCard';
 import SectionTitle from 'comp/Common/SectionTitle';
 import { useQuery } from 'react-query';
 import { getEvents } from 'api';
-import SingleCard from './event-single/SingleCard';
+import BarLoader from "react-spinners/BarLoader";
+import { LoadingSpinnerSettings } from 'helpers';
 
 const Events = () => {
     const { data, isFetched } = useQuery("events", getEvents);
 
     return (
-        <div className="rs-event modify2 orange-style pt-50 pb-50 md-pt-30 md-pb-30">
+        <div className="rs-event modify2 orange-style pt-30 pb-50  md-pb-30">
             <div className="container md-max-w-unset wider">
                 <SectionTitle
                     sectionClass="sec-title2 text-center mb-20"
@@ -32,7 +34,7 @@ const Events = () => {
                                 />
                             </div>
                         )) :
-                        null
+                        <BarLoader color="rgba(48, 32, 197)" cssOverride={LoadingSpinnerSettings} />
                     }
                 </div>
             </div>

@@ -27,6 +27,13 @@ export const determineDisplaySize = (width) => {
   }
 }
 
+export const LoadingSpinnerSettings = {
+    display: "block",
+    margin: "0 auto",
+    textAlign: "center",
+    borderColor: "rgba(48, 32, 197)",
+};
+
 export const ArchiveImages = [
     {
         url: 'media/archive/1.jpg',

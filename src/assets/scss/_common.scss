@@ -17,9 +17,7 @@
         //     transition: $transition;
         // }
 
-        body {
-            overflow: hidden;
-        }
+        overflow: hidden;
 
         .intro-section .video-column {
             z-index: -1;
@@ -35,7 +33,7 @@ body {
     font-family: $bodyFont;
     color: $bodyColor;
     vertical-align: baseline;
-    margin: 0
+    margin: 0;
 }
 ::-webkit-scrollbar {
     width: 10px;
@@ -1080,7 +1078,7 @@ select,
 
     &-container {
         width: 100%;
-        max-height: 85vh;
+        max-height: 90vh;
         display: flex;
         justify-content: center;
         align-items: center;
