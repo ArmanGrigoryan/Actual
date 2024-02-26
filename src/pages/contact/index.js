@@ -19,17 +19,12 @@ const Contact = () => {
             />
             <Header parentMenu='contact' />
             <ContactMain />
-            <Newsletter
-                sectionClass="rs-newsletter style1 orange-color event-bg mb--90 sm-mb-0 sm-pb-20"
-                titleClass="title mb-0 white-color"
-            />
+            <Newsletter />
             <Footer
                 footerClass="rs-footer home9-style main-home"
                 footerLogo={footerLogo}
             />
-            <ScrollToTop
-                scrollClassName="scrollup orange-color"
-            />
+            <ScrollToTop />
         </div>
     );
 }

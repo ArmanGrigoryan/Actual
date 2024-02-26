@@ -4,11 +4,11 @@ import BrandItem from './Item';
 import brand1 from 'media/partners/Mersoft.png';
 import brand2 from 'media/partners/Ador.png';
 import brand3 from 'media/partners/Breavis.png';
-import brand4 from 'media/partners/Exterior3.png';
-import brand5 from 'media/partners/Tsiran3.png';
-import brand6 from 'media/partners/Eye-Optics3.png';
-import brand7 from 'media/partners/ANAU3.png';
-import brand8 from 'media/partners/PAK3.png';
+import brand4 from 'media/partners/Exterior.png';
+import brand5 from 'media/partners/Tsiran.png';
+import brand6 from 'media/partners/Eye-Optics.png';
+import brand7 from 'media/partners/ANAU.png';
+import brand8 from 'media/partners/PAK.png';
 
 const BrandThree = (props) => {
     const { brandBg, brandClass } = props;

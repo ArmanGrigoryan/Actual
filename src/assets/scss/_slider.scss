@@ -30,7 +30,7 @@
                 }
                 .anime {
                     margin-bottom: 30px;
-                    padding: 0 22%;
+                    padding: 0 24%;
                 }
             }
             &.slide1 {
@@ -57,7 +57,7 @@
 
 @media #{$lg} {
     .rs-slider.main-home .slider-content .content-part .anime {
-        padding: 0 20%;
+        padding: 0 22%;
     }
 }
 
@@ -70,7 +70,7 @@
         padding: 350px 0 165px;
     }
     .rs-slider.main-home .slider-content .content-part .anime {
-        padding: 0 14%;
+        padding: 0;
         margin: 0 auto 30px;
         font-size: 22px;
         width: 100%;
@@ -102,7 +102,6 @@
         margin-bottom: 20px;
     }
     .rs-slider.main-home .slider-content .content-part .anime {
-        padding: 0;
         margin-bottom: 10px;
     }
 }
@@ -116,7 +115,6 @@
         font-size: 24px;
     }
     .rs-slider.main-home .slider-content .content-part .anime {
-        padding: 0 8%;
         font-size: 18px;
     }
 }

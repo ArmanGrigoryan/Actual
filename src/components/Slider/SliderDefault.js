@@ -7,14 +7,26 @@ const SliderDefault = () => {
     const videoRef = useRef();
 
     useEffect(() => {
-        videoRef.current && videoRef.current.play();
-        document.getElementById('slider-bg-video').play();
+        if (videoRef.current) {
+            videoRef.current.play();
+            videoRef.current.controls = false;
+        } 
+        document.getElementById('slider-bg-video')?.play();
     }, []);
 
     return (
         <div className="rs-slider main-home">
             <div className="slider-content slide1">
-                <video id="slider-bg-video" ref={videoRef} poster={VideoPoster} preload="auto" muted loop >
+                <video 
+                    ref={videoRef} 
+                    poster={VideoPoster} 
+                    id="slider-bg-video" 
+                    preload="auto" 
+                    controls={false}
+                    muted={true}
+                    loop={true}
+                    playsInline={true}
+                >
                     <source src={TrainingVideo} type="video/mp4" />
                 </video>
 

@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
 import CountUp from 'react-countup';
 import SectionTitle from 'comp/Common/SectionTitle';
-import countIcon1 from 'media/about/style3/icons/1.png';
-import countIcon2 from 'media/about/style3/icons/2.png';
-import countIcon3 from 'media/about/style3/icons/3.png';
+import countIcon1 from 'media/about/icons/person.svg';
+import countIcon2 from 'media/about/icons/grade.svg';
+import countIcon3 from 'media/about/icons/student.svg';
 
 const counters = [
     {
@@ -15,8 +15,8 @@ const counters = [
     },
     {
         countNum: 88,
-        countTitle: 'Միջին գնահատական',
-        counterPrefix: '',
+        countTitle: 'Միջին արդյունք',
+        counterPrefix: ' / 100',
         countIcon: countIcon2
     },
     {
@@ -59,7 +59,7 @@ const AboutCounter = () => {
                         {counters &&
                             <div className="row rs-counter counter-area">
                                 {counters.map(counter => (
-                                    <div key={counter.countNum} className="col-md-4 sm-mb-30">
+                                    <div key={counter.countNum} className="col-md-4 sm-mb-30 text-center">
                                         <div className="counter-item one">
                                             <img loading="lazy" className="count-img" src={counter.countIcon} alt="" />
                                             <h2 className="number rs-count mt-10 mb-0">

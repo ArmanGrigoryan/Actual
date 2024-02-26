@@ -1,7 +1,7 @@
 import React from "react";
 import { useScrollTop } from "hooks";
 
-const ScrollToTop = ({ scrollClassName }) => {
+const ScrollToTop = () => {
 	const {
         isVisible,
         animateRef,
@@ -9,7 +9,7 @@ const ScrollToTop = ({ scrollClassName }) => {
     } = useScrollTop();
 
 	return (
-		<div ref={animateRef} className={ scrollClassName ? scrollClassName : 'scrollup'}>
+		<div ref={animateRef} className="scrollup">
 			{isVisible && (
 				<div onClick={scrollToTop}>
 					<i className="fa fa-angle-up"></i>

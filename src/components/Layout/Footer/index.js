@@ -7,11 +7,13 @@ const Footer = (props) => {
     const { footerClass, footerTopClass } = props;
     const [visible, setVisible] = useState(false);
 
-    const email = "support@actualhr.am";
+    const email = "info@actualhr.am";
     const emailSubject = "Հետադարձ կապ";
     const emailBody = "Բարև Ձեզ, ես ցանկանում եմ տեղեկանալ դասընթացների մասին ավելի մանրամասն։ Կարող եք զանգահարել՝ +374";
 
-    useEffect(() => setTimeout(() => setVisible(true)), []);
+    useEffect(() => {
+        setTimeout(() => setVisible(true));
+    }, []);
 
     return (
         <footer className={footerClass ? footerClass : 'rs-footer'}>

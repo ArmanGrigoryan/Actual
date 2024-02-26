@@ -18,10 +18,7 @@ const HomePage = () =>  {
             />
             <Header parentMenu='home' />
             <HomeMain />
-            <Newsletter
-                sectionClass="rs-newsletter style1 orange-color mb--90 sm-mb-0 sm-pb-20"
-                titleClass="title mb-0 white-color"
-            />
+            <Newsletter />
             <Footer
                 footerClass="rs-footer home9-style main-home"
                 footerLogo={footerLogo}

@@ -124,7 +124,7 @@ const Faq = () => {
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
                                 <AccordionItemPanel className="card-body">
-                                    Կարող եք բաժանորդագրվել մեր ալիքին՝ <a target="_top" href={`mailto:support@actualhr.am?subject=${emailSubject}&body=${emailBody}`}>support@actualhr.am</a>, կամ զանգահարելով <a target="_top" href="tel:(+374)44-30-30-28">(+374)44-30-30-28</a> հեռախոսահամարին։
+                                    Կարող եք բաժանորդագրվել մեր ալիքին՝ <a target="_top" href={`mailto:info@actualhr.am?subject=${emailSubject}&body=${emailBody}`}>info@actualhr.am</a>, կամ զանգահարելով <a target="_top" href="tel:(+374)44-30-30-28">(+374)44-30-30-28</a> հեռախոսահամարին։
                                 </AccordionItemPanel>
                             </AccordionItem>
                         </Accordion>

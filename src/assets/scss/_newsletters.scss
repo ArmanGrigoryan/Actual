@@ -39,9 +39,9 @@
                     padding: 15px 30px;
                     text-wrap: nowrap;
                     color: $whiteColor;
-                    background: $orangeColor;
+                    background: $secondaryColor2;
                     &:hover {
-                        background: lighten($orangeColor, 5%);
+                        background: lighten($secondaryColor2, 5%);
                     }
                 }
             }
@@ -67,11 +67,8 @@
         padding: 40px 20px;
     }
 
-    .rs-newsletter.style1 .newsletter-wrap .newsletter-form input {
-        padding: 15px 10px;
-    }
-
+    .rs-newsletter.orange-color .newsletter-wrap .newsletter-form input,
     .rs-newsletter.orange-color .newsletter-wrap .newsletter-form button {
-        padding: 10px;
+        padding: 10px 15px;
     }
 }

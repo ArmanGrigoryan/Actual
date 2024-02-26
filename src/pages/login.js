@@ -7,7 +7,7 @@ import ScrollToTop from 'comp/Common/ScrollTop';
 import SiteBreadcrumb from 'comp/Common/Breadcumb';
 import SEO from 'comp/SEO';
 import footerLogo from 'media/logo/logo-light.png';
-import bannerbg from 'media/slider/main-home/homepage-bg.jpg';
+import bannerbg from 'media/slider/bg.jpg';
 import { useFade } from 'hooks';
 
 const Login = () => {
@@ -44,15 +44,13 @@ const Login = () => {
                     </div>
                 </div>
             </div>
-            <Newsletter
-                sectionClass="rs-newsletter style1 orange-color mb--90 sm-mb-0 sm-pb-20"
-                titleClass="title mb-0 white-color"
-            />
+            
+            <Newsletter />
             <Footer
                 footerClass="rs-footer home9-style main-home"
                 footerLogo={footerLogo}
             />
-            <ScrollToTop scrollClassName="scrollup orange-color" />
+            <ScrollToTop />
         </div>
     );
 }

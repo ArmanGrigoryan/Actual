@@ -86,8 +86,10 @@
                                 }
 
                                 &[aria-expanded=true] {
-                                    background: rgba(48, 32, 197, 0.993);
+                                    background: $secondaryColor;
                                     color: $whiteColor;
+                                    border-top-left-radius: 12px;
+                                    border-top-right-radius: 12px;
                                 }
                             }
                         }

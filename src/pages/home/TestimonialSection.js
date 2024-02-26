@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 import SectionTitle from 'comp/Common/SectionTitle';
 import SingleTestimonial from 'comp/Testimonial/SingleTestimonial';
-import quote from 'media/testimonial/main-home/test-2.png';
+import quote from 'media/testimonial/2.svg';
 import female from 'media/icon/female.png';
 
 const Slider = React.lazy(() => import("react-slick"));

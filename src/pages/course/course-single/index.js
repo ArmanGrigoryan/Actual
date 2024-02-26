@@ -7,7 +7,7 @@ import SiteBreadcrumb from 'comp/Common/Breadcumb';
 import SEO from 'comp/SEO';
 import ScrollToTop from 'comp/Common/ScrollTop';
 import footerLogo from 'media/logo/logo-light.png';
-import bannerbg from 'media/slider/main-home/homepage-bg.jpg';
+import bannerbg from 'media/slider/bg.jpg';
 import { useFade } from 'hooks';
 
 const CourseSingle = () => {
@@ -26,11 +26,8 @@ const CourseSingle = () => {
                 breadcrumbsImg={bannerbg}
             />
             <CourseDetailsPart />
-			<ScrollToTop scrollClassName="scrollup orange-color" />
-            <Newsletter
-                sectionClass="rs-newsletter style1 gray-bg orange-color mb--90 sm-mb-0 sm-pb-20"
-                titleClass="title mb-0 white-color"
-            />
+			<ScrollToTop />
+            <Newsletter />
             <Footer
                 footerClass="rs-footer home9-style main-home"
                 footerLogo={footerLogo}

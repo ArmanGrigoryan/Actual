@@ -44,16 +44,24 @@
                 opacity: 1;
                 button {
                     opacity: 1;
-                    background: $primaryColor;
+                    background: $secondaryColor;
                 }
             }
             &:hover {
                 button {
-                    background: $primaryColor;
+                    background: $secondaryColor;
                 }
             }
             &:last-item {
                 margin-bottom: 0;
+            }
+        }
+    }
+
+    .rs-counter {
+        .counter-item {
+            img {
+                max-width: 100px;
             }
         }
     }

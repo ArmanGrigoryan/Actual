@@ -137,7 +137,7 @@
                 a {
                     color: $yellowColor;
                     &:hover{
-                        color: $orangeColor;
+                        color: $yellowColor;
                     }
                 }
             }
@@ -181,7 +181,7 @@
             .footer-top {
                 .widget-title {
                     &:before{
-                        background: $orangeColor;
+                        background: $yellowColor;
                     }
                 }
                 .footer-logo{
@@ -210,7 +210,7 @@
                             font-size: 16px;
                             margin-right: 10px;
                             &:hover{
-                                color: $orangeColor;
+                                color: $yellowColor;
                             }
                         }
                     }
@@ -220,11 +220,11 @@
                         a {
                             color: #e8e8e8;
                             &:hover {
-                                color: $orangeColor;
+                                color: $yellowColor;
                             }
                         }
                         &:before {
-                            background: $orangeColor;
+                            background: $yellowColor;
                         }
                     }
                 }
@@ -232,13 +232,13 @@
                     li {
                         i {
                             &:before {
-                                color: $orangeColor;
+                                color: $yellowColor;
                             }
                         }
                         .desc {
                             a {
                                 &:hover {
-                                    color: $orangeColor;
+                                    color: $yellowColor;
                                 }
                             }
                         }
@@ -262,7 +262,7 @@
                     a {
                         color: $whiteColor;
                         &:hover{
-                            color: $orangeColor;
+                            color: $yellowColor;
                         }
                     }
                 }
@@ -277,7 +277,7 @@
                         a {
                             color: #e8e8e8;
                             &:hover {
-                                color: $orangeColor;
+                                color: $yellowColor;
                             }
                         }
                         &.dotted:after {
@@ -285,7 +285,7 @@
                             content: "";
                             position: absolute;
                             font-size: 18px;
-                            background: $orangeColor;
+                            background: $yellowColor;
                             right: 0;
                             top: 50%;
                             width: 6px;

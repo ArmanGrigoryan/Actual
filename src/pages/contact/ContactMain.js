@@ -3,7 +3,7 @@ import SiteBreadcrumb from 'comp/Common/Breadcumb';
 import SectionTitle from 'comp/Common/SectionTitle';
 import ContactForm from 'comp/Contact/ContactForm';
 import ContactInfo from 'comp/Contact/ContactInfo';
-import bannerbg from 'media/slider/main-home/homepage-bg.jpg';
+import bannerbg from 'media/slider/bg.jpg';
 
 const ContactMain = () => {
     const [btnText, setBtnText] = useState("Ուղարկել");
@@ -40,7 +40,7 @@ const ContactMain = () => {
                                 boxClass="sm-mb-30"
                                 title="Էլ. հասցե"
                                 iconClass="flaticon-email"
-                                email="support@actualhr.am"
+                                email="info@actualhr.am"
                             />
                         </div>
                         <div className="col-md-4">

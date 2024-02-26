@@ -22,7 +22,7 @@ const AboutMain = () => {
             </Suspense>
             <Testimonial />
             <Faq />
-			<ScrollToTop scrollClassName="scrollup orange-color" />
+			<ScrollToTop />
         </>
     )
 }

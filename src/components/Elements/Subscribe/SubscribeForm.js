@@ -40,7 +40,7 @@ const CustomForm = () => {
                     required
                     type="email"
                     placeholder="Էլ. փոստ" 
-                    className="pr-10"
+                    className="pr-10 radius-0"
                     ref={inputRef}
                     disabled={disabled}
                     onInput={evt => evt.target.setCustomValidity("")}

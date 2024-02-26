@@ -175,12 +175,6 @@ ul {
 .secondary-bg {
 	background: $secondaryColor;
 }
-.event-bg {
-    background: #f9f8f8;
-}
-.event2-bg{
-    background: #F4F6F5;
-}
 
 
 /*--
@@ -503,12 +497,12 @@ ul {
         }
         &.primary-transparent {
             background-color: transparent;
-            color: $primaryColor;
-            border-color: $primaryColor;
+            color: $secondaryColor;
+            border-color: $secondaryColor;
             transition: $transition;
 
             &:hover{
-                color: $primaryColor;
+                color: darken($secondaryColor, 10%);
                 transform: scale(1.05);
             }
         }

@@ -5,7 +5,7 @@ import Newsletter from 'comp/Common/Newsletter';
 import SiteBreadcrumb from 'comp/Common/Breadcumb';
 import AboutMain from './AboutMain';
 import footerLogo from 'media/logo/logo-light.png';
-import bannerbg from 'media/slider/main-home/homepage-bg-3.jpg';
+import bannerbg from 'media/slider/bg-3.jpg';
 import { useFade } from 'hooks';
 import SEO from 'comp/SEO';
 
@@ -25,10 +25,7 @@ const About = () => {
                 breadcrumbsImg={bannerbg}
             />
             <AboutMain />
-            <Newsletter
-                sectionClass="rs-newsletter style1 orange-color mb--90 sm-mb-0 sm-pb-20"
-                titleClass="title mb-0 white-color"
-            />
+            <Newsletter />
             <Footer
                 footerClass="rs-footer home9-style main-home"
                 footerLogo={footerLogo}

@@ -8,7 +8,7 @@ import SEO from 'comp/SEO';
 import Courses from './CoursesSection';
 import { useFade } from 'hooks';
 import footerLogo from 'media/logo/logo-light.png';
-import bannerbg from 'media/slider/main-home/homepage-bg-2.jpg';
+import bannerbg from 'media/slider/bg-2.jpg';
 
 const Course = () => {
     const { refElement: animateRef } = useFade();
@@ -26,14 +26,8 @@ const Course = () => {
                 breadcrumbsImg={bannerbg}
             />
 			<Courses />
-
-			<ScrollToTop
-				scrollClassName="scrollup orange-color"
-			/>
-            <Newsletter
-                sectionClass="rs-newsletter style1 orange-color mb--90 sm-mb-0 sm-pb-20"
-                titleClass="title mb-0 white-color"
-            />
+			<ScrollToTop />
+            <Newsletter />
             <Footer
                 footerClass="rs-footer home9-style main-home"
                 footerLogo={footerLogo}
