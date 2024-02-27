@@ -16,7 +16,7 @@ const Register = () => {
     return (
         <div ref={animateRef} className="hidden-opacity">
             <SEO
-                title='Actual HR Agency | Ակտուալ - Գրանցվեք'
+                title='Actual HR Partner | Ակտուալ - Գրանցվեք'
                 description='Գրանցվեք՝ Դասընթացներին մասնակից դառնալու, Ակտուալի ամենաթարմ նորությունների, առաջարկությունների մասին տեղեկանալու և հետադարձ կապի պահպանման համար:'
             />
             <Header parentMenu='pages' />

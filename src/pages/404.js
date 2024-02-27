@@ -9,7 +9,7 @@ const Error = () => {
     return (
         <div ref={animateRef} className="hidden-opacity">
             <SEO
-                title='Actual HR Agency | Ակտուալ - Էջը չի գտնվել'
+                title='Actual HR Partner | Ակտուալ - Էջը չի գտնվել'
                 description='Էջը չի գտնվել, փորձեք ավելի ուշ կամ վերադարձեք Ակտուալի գլխավոր էջ:'
             />
             <ErrorContent />

@@ -29,6 +29,17 @@ export default function HtmlText({ html }) {
 
                             return <h2 key={idx} className={elementClass}>{ text }</h2>
                         }
+                        else if (type === "subtitle") {
+                            if (hasHtml) {
+                                return <h4 
+                                    key={idx} 
+                                    dangerouslySetInnerHTML={{ __html: text }}
+                                    className={elementClass}
+                                />
+                            }
+
+                            return <h4 key={idx} className={elementClass}>{ text }</h4>
+                        }
                         else if (type === "hr") {
                             return <hr key={idx} />
                         }

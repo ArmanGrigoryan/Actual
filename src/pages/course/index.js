@@ -16,7 +16,7 @@ const Course = () => {
     return (
         <div ref={animateRef} className="hidden-opacity">
             <SEO
-                title='Actual HR Agency | Ակտուալ - Դասընթացներ'
+                title='Actual HR Partner | Ակտուալ - Դասընթացներ'
                 description='Ակտուալն իր ուսուցման ծառայություններն է առաջարկում բիզնես անգլերենի, մարդկային ռեսուրսների կառավարման, Excel-ի, կադրային գործավարության ոլորտներում, ինչպես սկսնակների, այնպես էլ խորացված մասնագետների համար։ Դարձեք վկայագրված մասնագետ:'
             />
             <Header parentMenu='course' />

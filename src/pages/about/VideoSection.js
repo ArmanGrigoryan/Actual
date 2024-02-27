@@ -23,8 +23,8 @@ const AboutVideo = () => {
             <div className="partition-bg-wrap inner-page">
                 <div className="mx-30">
                     <div className="row y-bottom flex-nowrap md-flex-wrap">
-                        <div className="col-lg-6 pb-50 md-pt-0 md-pb-0 d-flex align-items-center min-height-400">
-                            <div className="video-wrap w-100">
+                        <div className="col-lg-6 pb-50 px-70 mobile-pl-10 xl-px-40 md-pt-0 md-pb-0 d-flex align-items-center min-height-400">
+                            <div className="video-wrap w-100 mt-60">
                                 <a className="popup-videos w-100" onClick={toggleModal}>
                                     <i className="fa fa-play"></i>
                                     <h5 className="title md-fs-18 xs-fs-14 mb-0 ml-10 md-ml-20 mr-10 mobile-fade-full-width width-30-100">

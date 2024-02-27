@@ -14,7 +14,7 @@ const Contact = () => {
     return (
         <div ref={animateRef} className="hidden-opacity">
             <SEO
-                title='Actual HR Agency | Ակտուալ - Մեր մասին'
+                title='Actual HR Partner | Ակտուալ - Մեր մասին'
                 description='Կապ մեզ հետ - Բաժանորդագրվեք Ակտուալի ալիքին հետադարձ կապի համար կամ այցելեք մեզ՝ ք. Երևան, Խանջյան 19, (+374)44-30-30-28։'
             />
             <Header parentMenu='contact' />

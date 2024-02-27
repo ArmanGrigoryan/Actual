@@ -16,7 +16,7 @@ const Event = () => {
     return (
         <div ref={animateRef} className="hidden-opacity">
             <SEO
-                title='Actual HR Agency | Ակտուալ Իվենթներ | Ակտուալ իրադարձություններ'
+                title='Actual HR Partner | Ակտուալ Իվենթներ | Ակտուալ իրադարձություններ'
                 description='Ծանոթացեք Ակտուալի իվենթներին։ Ստացեք տեղեկատվություն նմանը չունեցող Եվ յուրօրինակ The Master-ի, The voice of HR-ի հետ։'
             />
             <Header parentMenu='pages' />

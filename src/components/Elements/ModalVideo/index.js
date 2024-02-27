@@ -47,7 +47,6 @@ const ModalVideo = ({
                 title={videoTitle}
                 allowFullScreen={true}
                 playsInline={true}
-                playsinline={true}
                 frameBorder="0"
                 scrolling="no"
                 allow="accelerometer; autoplay; playsInline; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

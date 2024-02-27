@@ -16,7 +16,7 @@ const CourseSingle = () => {
     return (
         <div ref={animateRef} className="hidden-opacity">
             <SEO
-                title='Actual HR Agency | Ակտուալ - Դասընթացներ'
+                title='Actual HR Partner | Ակտուալ - Դասընթացներ'
                 description='Ծանոթացեք դասընթացի բնութագրին, ստացեք տեղեկատվություն դասընթացավարի, անցկացման ժամերի մասին Եվ գրանցվեք։'
             />
             <Header parentMenu='course' />

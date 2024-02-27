@@ -16,7 +16,7 @@ const Login = () => {
     return (
         <div ref={animateRef} className="hidden-opacity">
             <SEO
-                title='Actual HR Agency | Ակտուալ - Մուտք գործեք'
+                title='Actual HR Partner | Ակտուալ - Մուտք գործեք'
                 description='Մուտք գործեք` Դասընթացներին գրանցվելու, Ակտուալի ամենաթարմ նորությունների, առաջարկությունների մասին տեղեկանալու և հետադարձ կապի պահպանման համար:'
             />
             <Header parentMenu='pages' />

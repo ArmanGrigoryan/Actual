@@ -60,7 +60,7 @@ const AboutTab = () => {
             <div className="container">
                 <Tabs>
                     <div className="row align-items-center">
-                        <div className="col-lg-6 padding-0 md-pl-14 md-pr-14 md-mb-30 relative">
+                        <div className="col-lg-6 p-25 md-mb-30 relative">
                             <div className={`img-part text-center ${tab === tab2 ? "higher" : ""}`}>
                                 {
                                     tab === tab2 ? 

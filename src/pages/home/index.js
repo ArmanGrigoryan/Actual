@@ -13,7 +13,7 @@ const HomePage = () =>  {
     return (
         <div ref={animateRef} className="hidden-opacity">
             <SEO
-                title='Actual HR Agency | Ակտուալ - Գլխավոր'
+                title='Actual HR Partner | Ակտուալ - Գլխավոր'
                 description='Գլխավոր էջ - Այցելեք Ակտուալ` Հայաստանում նմանը չունեցող ուսումնական կենտրոն ծառայությունների ոլորտում: Եթե չունեք փորձ, պարզապես գնեք այն:'
             />
             <Header parentMenu='home' />

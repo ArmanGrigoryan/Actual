@@ -11,18 +11,21 @@
         font-family: $bodyFont !important;
     }
 
-    &:has(.image-preview-modal) {
-        // ::-webkit-scrollbar-thumb, ::-webkit-scrollbar {
-        //     visibility: hidden;
-        //     transition: $transition;
-        // }
-
+    &:has(.image-preview-modal),
+    &:has(#open-iframe) {
         overflow: hidden;
 
+        .scrollup {
+            display: none;
+        }
+    }
+
+    &:has(.image-preview-modal) {
         .intro-section .video-column {
             z-index: -1;
         }
     }
+
 }
 
 html,
@@ -36,8 +39,8 @@ body {
     margin: 0;
 }
 ::-webkit-scrollbar {
-    width: 10px;
-    background: transparent !important;
+    width: 0;
+    background: rgba(0, 0, 0, .65) !important;
 }
 ::-webkit-scrollbar-track {
     background: transparent !important;
@@ -435,7 +438,7 @@ ul {
         padding-top: 5px;
         padding-bottom: 100px;
         margin: 0;
-        font-size: 30px;
+        font-size: 26px;
         color: #fff;
     }
 
@@ -894,7 +897,8 @@ select,
     }
 
     .about-tabs-image {
-        min-height: 380px;
+        height: 450px;
+        object-fit: cover;
         width: 100%;
     }
 }
@@ -1200,18 +1204,6 @@ select,
         .container.wider {
             max-width: 1400px;
         }
-    
-        .img-part {
-            .about-tabs-image {
-                min-height: 470px;
-            }
-    
-            &.higher {
-                .about-tabs-image {
-                    min-height: 530px;
-                }
-            }
-        }
         .full-width-header #rs-header .menu-area .main-menu .rs-menu ul.nav-menu li a {
             font-size: 17px;
         }
@@ -1251,10 +1243,6 @@ select,
         p {
             font-size: 14px;
             margin-bottom: 10px;
-        }
-
-        &.expanded {
-            max-height: min(100%, 600px);
         }
     }
     .md-fs-18 {
@@ -1299,10 +1287,6 @@ select,
         line-height: 1.4;
     }
     .absolute-description {
-        &.expanded {
-            max-height: min(100%, 500px);
-        }
-
         p {
             font-size: 12px;
             line-height: 16px;
@@ -1315,16 +1299,13 @@ select,
 
 @media #{$xs} { 
     .readon {
-        padding: 15px 30px !important;
+        padding: 10px 30px !important;
 
         &.bottom-text {
             padding: 15px 30px 25px !important;
         }
 
         font-size: 15px;
-    }
-    .absolute-description.expanded {
-        max-height: min(100%, 400px);
     }
     .xs-fs-14 {
         font-size: 14px;
@@ -1348,7 +1329,7 @@ select,
     }
     .absolute-description {
         span {
-            font-size: 24px;
+            font-size: 22px;
         }
     }
 }

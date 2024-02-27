@@ -7,11 +7,20 @@ const SliderDefault = () => {
     const videoRef = useRef();
 
     useEffect(() => {
-        if (videoRef.current) {
-            videoRef.current.play();
-            videoRef.current.controls = false;
-        } 
-        document.getElementById('slider-bg-video')?.play();
+        const element = document.getElementById('slider-bg-video');
+        if (element) {
+            element.controls = false;
+            element.currentTime = 0;
+            element.play();
+        }
+
+        return () => {
+            if (element) {
+                element.controls = false;
+                element.currentTime = 0;
+                element.play();
+            }
+        }
     }, []);
 
     return (

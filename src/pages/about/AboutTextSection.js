@@ -31,7 +31,7 @@ const AboutText = () => {
                         </div>
                     </div>
 
-                    <div className="col-lg-6 padding-0 md-pl-14 md-pr-14 md-mb-30">
+                    <div className="col-lg-6 p-25 md-mb-30">
                         <div className="img-part animated">
                             <img loading="lazy" className="about-main" src={AboutImage} alt="About" />
                         </div>

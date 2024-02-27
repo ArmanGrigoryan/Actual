@@ -15,7 +15,7 @@ const About = () => {
     return (
         <div ref={animateRef} className="hidden-opacity">
             <SEO
-                title='Actual HR Agency | Ակտուալ - Մեր մասին'
+                title='Actual HR Partner | Ակտուալ - Մեր մասին'
                 description='Ծանոթացեք Ակտուալի պատմությանը, առաքելությանը, ուսումնական կենտրոնի հեռանկարներին և Ակտուալ թիմին։ Դիտեք Ակտուալի արխիվը Եվ կատարեք շրջագայություն։'
             />
             <Header parentMenu='home' />
