@@ -9,13 +9,15 @@ import bannerbg from 'media/slider/bg-3.jpg';
 import { useFade } from 'hooks';
 import SEO from 'comp/SEO';
 
+const env = import.meta.env;
+
 const About = () => {
     const { refElement: animateRef } = useFade();
 
     return (
         <div ref={animateRef} className="hidden-opacity">
             <SEO
-                title='Actual HR Partner | Ակտուալ - Մեր մասին'
+                title={`${env.VITE_APP_APPLICATION_TITLE} | Ակտուալ - Մեր մասին`}
                 description='Ծանոթացեք Ակտուալի պատմությանը, առաքելությանը, ուսումնական կենտրոնի հեռանկարներին և Ակտուալ թիմին։ Դիտեք Ակտուալի արխիվը Եվ կատարեք շրջագայություն։'
             />
             <Header parentMenu='home' />

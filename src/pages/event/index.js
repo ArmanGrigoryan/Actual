@@ -10,15 +10,17 @@ import footerLogo from 'media/logo/logo-light.png';
 import bannerbg from 'media/slider/bg-4.jpg';
 import { useFade } from 'hooks';
 
+const env = import.meta.env;
+
 const Event = () => {
     const { refElement: animateRef } = useFade();
 
     return (
         <div ref={animateRef} className="hidden-opacity">
-            <SEO
-                title='Actual HR Partner | Ակտուալ Իվենթներ | Ակտուալ իրադարձություններ'
+            {/* <SEO
+                title={`${env.VITE_APP_APPLICATION_TITLE} | Ակտուալ Իվենթներ | Ակտուալ իրադարձություններ`}
                 description='Ծանոթացեք Ակտուալի իվենթներին։ Ստացեք տեղեկատվություն նմանը չունեցող Եվ յուրօրինակ The Master-ի, The voice of HR-ի հետ։'
-            />
+            /> */}
             <Header parentMenu='pages' />
             <SiteBreadcrumb
                 pageTitle="Ակտուալ Իվենթներ"

@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom';
 
 const AddressMaps = React.lazy(() => import('./Maps'));
 
+const env = import.meta.env;
+
 const Footer = (props) => {
     const { footerClass, footerTopClass } = props;
     const [visible, setVisible] = useState(false);
 
-    const email = "info@actualhr.am";
     const emailSubject = "Հետադարձ կապ";
     const emailBody = "Բարև Ձեզ, ես ցանկանում եմ տեղեկանալ դասընթացների մասին ավելի մանրամասն։ Կարող եք զանգահարել՝ +374";
 
@@ -24,35 +25,35 @@ const Footer = (props) => {
                         <ul className="address-widget">
                             <li>
                                 <i className="flaticon-location"></i>
-                                <div className="desc">Խանջյան 19, Երևան</div>
+                                <div className="desc">{ env.VITE_APP_CONTACT_ADDRESS }</div>
                             </li>
                             <li>
                                 <i className="flaticon-call"></i>
-                                <div className="desc"><a href="tel:(+374)44-30-30-28">(+374) 44-30-30-28</a></div>
+                                <div className="desc"><a href={`tel:${env.VITE_APP_CONTACT_PHONE}`}>{ env.VITE_APP_CONTACT_PHONE }</a></div>
                             </li>
                             <li>
                                 <i className="flaticon-email"></i>
-                                <div className="desc"><a href={`mailto:${email}?subject=${emailSubject}&body=${encodeURIComponent(emailBody)}`}>{ email }</a></div>
+                                <div className="desc"><a href={`mailto:${env.VITE_APP_CONTACT_EMAIL}?subject=${emailSubject}&body=${encodeURIComponent(emailBody)}`}>{ env.VITE_APP_CONTACT_EMAIL }</a></div>
                             </li>
                             <li className='mt-50 sm-mt-0'>
                                 <ul className="d-flex gap-20">
                                     <li className="d-flex">
-                                        <a target="_blank" href="https://www.facebook.com/ActualHPartner" className="cursor-pointer">
+                                        <a target="_blank" href={env.VITE_APP_SOCIAL_FB_URL} className="cursor-pointer">
                                             <i className="fa fa-facebook-f position-static"></i>
                                         </a>
                                     </li>
                                     <li className="d-flex">
-                                        <a target="_blank" href="https://www.instagram.com/actual_hrpartner/" className="cursor-pointer">
+                                        <a target="_blank" href={env.VITE_APP_SOCIAL_IG_URL}>
                                             <i className="fa fa-instagram position-static"></i>
                                         </a>
                                     </li>
                                     <li className="d-flex">
-                                        <a target="_blank" href="https://t.me/actual_hragency" className="cursor-pointer">
+                                        <a target="_blank" href={env.VITE_APP_SOCIAL_TG_URL}>
                                             <i className="fa fa-telegram position-static"></i>
                                         </a>
                                     </li>
                                     <li className="d-flex">
-                                        <a target="_blank" href="https://www.youtube.com/@ActualHRPartner">
+                                        <a target="_blank" href={env.VITE_APP_SOCIAL_YT_URL}>
                                             <i className="fa fa-youtube position-static"></i>
                                         </a>
                                     </li>

@@ -10,13 +10,15 @@ import { useFade } from 'hooks';
 import footerLogo from 'media/logo/logo-light.png';
 import bannerbg from 'media/slider/bg-2.jpg';
 
+const env = import.meta.env;
+
 const Course = () => {
     const { refElement: animateRef } = useFade();
 
     return (
         <div ref={animateRef} className="hidden-opacity">
             <SEO
-                title='Actual HR Partner | Ակտուալ - Դասընթացներ'
+                title={`${env.VITE_APP_APPLICATION_TITLE} | Ակտուալ - Դասընթացներ`}
                 description='Ակտուալն իր ուսուցման ծառայություններն է առաջարկում բիզնես անգլերենի, մարդկային ռեսուրսների կառավարման, Excel-ի, կադրային գործավարության ոլորտներում, ինչպես սկսնակների, այնպես էլ խորացված մասնագետների համար։ Դարձեք վկայագրված մասնագետ:'
             />
             <Header parentMenu='course' />

@@ -10,13 +10,15 @@ import footerLogo from 'media/logo/logo-light.png';
 import bannerbg from 'media/slider/bg.jpg';
 import { useFade } from 'hooks';
 
+const env = import.meta.env;
+
 const Login = () => {
     const { refElement: animateRef } = useFade();
 
     return (
         <div ref={animateRef} className="hidden-opacity">
             <SEO
-                title='Actual HR Partner | Ակտուալ - Մուտք գործեք'
+                title={`${env.VITE_APP_APPLICATION_TITLE} | Ակտուալ - Մուտք գործեք`}
                 description='Մուտք գործեք` Դասընթացներին գրանցվելու, Ակտուալի ամենաթարմ նորությունների, առաջարկությունների մասին տեղեկանալու և հետադարձ կապի պահպանման համար:'
             />
             <Header parentMenu='pages' />

@@ -1,11 +1,13 @@
-import React, { useMemo, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
+import { subscribeMail } from "api";
+
+const env = import.meta.env;
+const SubscribeUrl = env.VITE_APP_MAILCHAMP_SUBSCRIBE_URL;
 
 const CustomForm = () => {
     const [disabled, setDisabled] = useState(false);
     const inputRef = useRef();
-
-    const URL = useMemo(() => "https://rstheme.us16.list-manage.com/subscribe?u=b07284c0016b6ff3084de6551&id=292fe5312b", []);
 
     const clickHandler = (submitHandler) => () => {
         const pattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
@@ -14,26 +16,13 @@ const CustomForm = () => {
         if (!value || !pattern.test(value)) return;
 
         submitHandler({ email: inputRef.current.value });
-
-        const body = JSON.stringify({
-            filters: {
-                toEmail: value
-            }
-        });
-
-        fetch("http://localhost:8000/send-mail", {
-            method: "POST",
-            headers: {
-                "content-type": "application/json",
-            },
-            body
-        })
-            .finally(() => setDisabled(true))
+        subscribeMail(value)
+            .finally(() => setDisabled(true));
     }
 
     return (
         <MailchimpSubscribe
-            url={URL}
+            url={SubscribeUrl}
             render={({ subscribe, status }) => (
             <div className="d-flex flex">
                 <input 

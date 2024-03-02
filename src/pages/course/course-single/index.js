@@ -10,13 +10,15 @@ import footerLogo from 'media/logo/logo-light.png';
 import bannerbg from 'media/slider/bg.jpg';
 import { useFade } from 'hooks';
 
+const env = import.meta.env;
+
 const CourseSingle = () => {
     const { refElement: animateRef } = useFade();
 
     return (
         <div ref={animateRef} className="hidden-opacity">
             <SEO
-                title='Actual HR Partner | Ակտուալ - Դասընթացներ'
+                title={`${env.VITE_APP_APPLICATION_TITLE} | Ակտուալ - Դասընթացներ`}
                 description='Ծանոթացեք դասընթացի բնութագրին, ստացեք տեղեկատվություն դասընթացավարի, անցկացման ժամերի մասին Եվ գրանցվեք։'
             />
             <Header parentMenu='course' />

@@ -8,13 +8,15 @@ import footerLogo from 'media/logo/logo-light.png';
 import { useFade } from 'hooks';
 import SEO from 'comp/SEO';
 
+const env = import.meta.env;
+
 const Contact = () => {
     const { refElement: animateRef } = useFade();
 
     return (
         <div ref={animateRef} className="hidden-opacity">
             <SEO
-                title='Actual HR Partner | Ակտուալ - Մեր մասին'
+                title={`${env.VITE_APP_APPLICATION_TITLE} | Ակտուալ - Մեր մասին`}
                 description='Կապ մեզ հետ - Բաժանորդագրվեք Ակտուալի ալիքին հետադարձ կապի համար կամ այցելեք մեզ՝ ք. Երևան, Խանջյան 19, (+374)44-30-30-28։'
             />
             <Header parentMenu='contact' />

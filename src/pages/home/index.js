@@ -7,13 +7,15 @@ import footerLogo from 'media/logo/logo-light.png';
 import { useFade } from 'hooks';
 import SEO from 'comp/SEO';
 
+const env = import.meta.env;
+
 const HomePage = () =>  {
     const { refElement: animateRef } = useFade();
 
     return (
         <div ref={animateRef} className="hidden-opacity">
             <SEO
-                title='Actual HR Partner | Ակտուալ - Գլխավոր'
+                title={`${env.VITE_APP_APPLICATION_TITLE} | Ակտուալ - Գլխավոր`}
                 description='Գլխավոր էջ - Այցելեք Ակտուալ` Հայաստանում նմանը չունեցող ուսումնական կենտրոն ծառայությունների ոլորտում: Եթե չունեք փորձ, պարզապես գնեք այն:'
             />
             <Header parentMenu='home' />
