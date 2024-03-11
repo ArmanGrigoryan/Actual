@@ -13,14 +13,14 @@ const CourseReviews = ({ openPreviewHandler }) => {
     const { data, isFetched } = useQuery("reviews", getReviews);
 
     return (
-        <div className="content white-bg">
-            <div className="rs-course-reviews rs-featured-news pt-30 pb-70 md-pt-30 md-pb-30">
+        <div className="content light-bg radius-12">
+            <div className="rs-course-reviews pt-30 px-25 xs-px-0 pb-20 md-pt-20 radius-12">
                 <div className="container-fluid">
                     <SectionTitle
-                        sectionClass="sec-title2 text-center"
-                        subtitleClass="sub-title uppercase mb-10"
+                        sectionClass="title text-center"
+                        subtitleClass="sub-title mb-10"
                         subtitle=""
-                        titleClass="title mb-30"
+                        titleClass="title mb-10"
                         title="Ակտուալ Հաղորդակցություն"
                     />
 

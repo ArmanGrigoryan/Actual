@@ -5,6 +5,8 @@ import ContactForm from 'comp/Contact/ContactForm';
 import ContactInfo from 'comp/Contact/ContactInfo';
 import bannerbg from 'media/slider/bg.jpg';
 
+const env = import.meta.env;
+
 const ContactMain = () => {
     const [btnText, setBtnText] = useState("Ուղարկել");
     const [disabled, setDisabled] = useState(false);
@@ -24,40 +26,40 @@ const ContactMain = () => {
                 breadcrumbsImg={bannerbg}
             />
 
-            <div className="rs-contact style1 event-bg pt-50 md-pt-30 pb-50 md-pb-30 xs-px-10">
-                <div className="container wider pb-50 md-pb-30">
-                    <div className="row gutter-35">
-                        <div className="col-md-4">
+            <div className="rs-contact style1 event-bg pt-40 md-pt-20 pb-40 md-pb-20 xs-px-10">
+                <div className="container wider pb-40 md-pb-20">
+                    <div className="row justify-content-between">
+                        <div className="col-md-4-gap">
                             <ContactInfo
                                 boxClass="sm-mb-30"
                                 title="Հասցե"
                                 iconClass="flaticon-location"
-                                address="Խանջյան 19, Երևան"
+                                address={env.VITE_APP_CONTACT_ADDRESS}
                             />
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-4-gap">
                             <ContactInfo
                                 boxClass="sm-mb-30"
                                 title="Էլ. հասցե"
                                 iconClass="flaticon-email"
-                                email="info@actualhr.am"
+                                email={env.VITE_APP_CONTACT_EMAIL}
                             />
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-4-gap">
                             <ContactInfo
                                 boxClass="sm-mb-30"
                                 title="Հեռախոս"
-                                iconClass="flaticon-phone"
-                                phone="(+374) 44-30-30-28"
+                                iconClass="flaticon-call"
+                                phone={env.VITE_APP_CONTACT_PHONE}
                             />
                         </div>
                     </div>
                 </div>
 
                 <div className="container wider">
-                    <div className="row y-top">
-                        <div className="col-lg-6 md-mb-30">
-                            <div className="mapouter">
+                    <div className="row">
+                        <div className="col-lg-6 md-mb-20">
+                            <div className="relative text-right w-100">
                                 <div className="gmap_canvas">
                                     <iframe
                                         title="Map"
@@ -70,17 +72,17 @@ const ContactMain = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-6 pl-50 md-pl-14">
+                        <div className="col-lg-6 pl-50 md-pl-0">
                             <div className="contact-widget">
                                 <SectionTitle
-                                    sectionClass="sec-title2 mb-36"
-                                    titleClass="title black-color mb-14"
+                                    sectionClass="sec-title mb-40"
+                                    titleClass="title black-color mb-10"
                                     title="Կապ հաստատել"
                                     descClass="new-desc"
                                     description="Թողեք ձեր հաղորդագրությունը և մենք շուտով կպատասխանենք"
                                 />
                                 <ContactForm
-                                    submitBtnClass="readon orange-btn primary-transparent main-home p-40 cursor-pointer radius-12"
+                                    submitBtnClass="readon orange-btn primary-transparent cursor-pointer"
                                     btnText={btnText}
                                     btnDisabled={disabled}
                                     cb={submitHandler}

@@ -1,7 +1,5 @@
 .rs-team {
     &.style1 {
-        margin-top: 20px;
-
         .team-item {
             border-radius: 15px 15px 4px 4px;
             position: relative;
@@ -38,39 +36,6 @@
                     display: block;
                     font-size: 12px;
                 }
-                .social-links {
-                    li {
-                        display: inline;
-                        margin-right: 35px;
-                        a {
-                            display: inline-block;
-                            color: $whiteColor;
-                            &:hover {
-                                color: $titleColor;
-                            }
-                        }
-                        &:last-child {
-                            margin: 0;
-                        }
-                    }
-                }
-            }
-        }
-        .instructor {
-            &-title{
-                position:relative;
-                color: $titleColor;
-                font-size:26px;
-                font-weight:600;
-                line-height:1.3em;
-                margin-bottom: 10px;
-            }
-
-            ul {
-                color: $titleColor;
-                margin: 20px 25px;
-                list-style-type: circle;
-                line-height: 22px;
             }
         }
     } 
@@ -82,7 +47,7 @@
                 bottom: -240px;
                 transform: translateX(-50%);
                 width: 120%;
-                height: 320px ;
+                height: 320px;
                 background: $whiteColor;
                 border-radius: 40%;
                 padding-top: 10px;
@@ -90,9 +55,6 @@
                 transition: $transition;
                 .designation {
                     color: $bodyColor;
-                }
-                .social-links {
-                    display: none;
                 }
             }
         }
@@ -106,9 +68,6 @@
 }
 
 @media #{$mobile} {
-    .team-item .content-part .social-links li {
-        margin-right: 24px;
-    }
     .img-part .about-tabs-image {
         max-height: 250px !important;
     }

@@ -27,7 +27,7 @@ const Login = () => {
                 pageName=""
                 breadcrumbsImg={bannerbg}
             />
-            <div className="rs-login pt-50 pb-50 md-pt-30 md-pb-30">
+            <div className="rs-login pt-40 pb-40 md-pt-20 md-pb-20">
                 <div className="container">
                     <div className="noticed">
                         <div className="main-part">
@@ -36,7 +36,7 @@ const Login = () => {
                                 <form>
                                     <input type="email" name="E-mail" placeholder="Էլ. փոստ" required />
                                     <input type="text" name="text" placeholder="Մուտքանուն" required />
-                                    <button type="submit" className="readon submit-btn">Մուտք</button>
+                                    <button type="submit" className="readon submit-btn cursor-pointer">Մուտք</button>
                                     <div className="last-password">
                                         <p>Չունե՞ք հաշիվ:   <Link className='ml-10 bold' to="/register">Ստեղծել նորը</Link></p>
                                     </div>

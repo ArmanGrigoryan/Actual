@@ -1,3 +1,7 @@
+import countIcon1 from 'media/about/icons/person.svg';
+import countIcon2 from 'media/about/icons/grade.svg';
+import countIcon3 from 'media/about/icons/student.svg';
+
 export const DisplaySize = {
     NotSupported: 0,
     MobileS: 320,
@@ -6,12 +10,15 @@ export const DisplaySize = {
     Tablet: 768,
     ComputerXS: 1024,
     ComputerS: 1100,
-    ComputerM: 1440,
+    ComputerM: 1200,
+    ComputerL: 1440,
 };
 
 export const determineDisplaySize = (width) => {
   if (width >= DisplaySize.Tablet) {
-    if (width >= DisplaySize.ComputerM) {
+    if (width >= DisplaySize.ComputerL) {
+        return DisplaySize.ComputerL;
+    } else if (width >= DisplaySize.ComputerM) {
         return DisplaySize.ComputerM;
     } else if (width >= DisplaySize.ComputerS) {
       return DisplaySize.ComputerS;
@@ -118,7 +125,7 @@ export const ArchiveImages = [
 ]
 
 export const CourseReviewsSliderSettings = {
-  dots: true,
+  dots: false,
   centerMode: false,
   infinite: true,
   arrows: true,
@@ -151,7 +158,7 @@ export const SlideShowSliderSettings = {
 };
 
 export const WithLoveNewsSliderSettings = {
-  dots: true,
+  dots: false,
   centerMode: false,
   infinite: true,
   arrows: true,
@@ -204,6 +211,56 @@ export const TeamSliderSettings = {
         },
     ]
 };
+
+export const HomepageTestimonialSettings = {
+    dots: false,
+    centerMode: false,
+    infinite: true,
+    draggable: false,
+    autoplay: true,
+    autoplaySpeed: 8000,
+    arrows: false,
+    lazyLoad: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+                dots: false,
+            }
+        },
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 2,
+                dots: false,
+            }
+        }
+    ]
+};
+
+export const AboutTabCounters = [
+    {
+        countNum: 500,
+        countTitle: 'Ուսանող',
+        counterPrefix: '+',
+        countIcon: countIcon1
+    },
+    {
+        countNum: 88,
+        countTitle: 'Միջին արդյունք',
+        counterPrefix: ' / 100',
+        countIcon: countIcon2
+    },
+    {
+        countNum: 95,
+        countTitle: 'Շրջանավարտ',
+        counterPrefix: '%',
+        countIcon: countIcon3
+    }
+];
 
 export const AnimationInterval = 300;
 export const HeightScrollAnimationInterval = 2000;

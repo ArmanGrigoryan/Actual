@@ -12,7 +12,7 @@ const PopupImage = React.forwardRef((props, ref) => {
                     <div className="relative max-height-inherit">
                         { children }
 
-                        <button className='close-icon' onClick={onClose}>
+                        <button className='close-icon cursor-pointer' onClick={onClose}>
                             <i className='fa fa-close'></i>
                         </button>
                     </div>

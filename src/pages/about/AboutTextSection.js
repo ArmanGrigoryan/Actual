@@ -5,18 +5,18 @@ import AboutImage from 'media/about/about2orange.png';
 const AboutText = () => {
 
     return (
-        <div className="rs-about style1 pt-50 pb-50 md-pt-30 md-pb-30">            
+        <div className="rs-about style1 pt-40 pb-40 md-pt-20 md-pb-20">            
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-lg-6 pr-70 md-pr-14 pl-20">
+                    <div className="col-lg-6 pr-70 md-pr-20 pl-20">
                         <div className="about-content">
                             <SectionTitle
-                                sectionClass="sec-title mb-44 md-mb-0"
-                                subtitleClass="sub-title orange"
+                                sectionClass="sec-title mb-40 md-mb-0"
+                                subtitleClass="sub-title primary"
                                 subtitle=""
-                                titleClass="title mb-16"
+                                titleClass="title mb-20"
                                 title="Ակտուալ-ի մասին"
-                                descClass="bold-text mb-22"
+                                descClass="bold-text mb-20"
                                 description="Ակտուալը ժամանակակից հարթակ է, որտեղ Մարդկային ռեսուրսների կառավարմամբ հետաքրքրված յուրաքանչյուր
                                 անձ, սկսնակից մինչև կայացած մասնագետ, կարող է ձեռքբերել գիտելիքներ և հմտություններ: Մարդկային
                                 ռեսուրսների կառավարումը ամենապահանջված մասնագիտացումներից մեկն է և մենք ձեզ կօգնենք դառնալ
@@ -31,7 +31,7 @@ const AboutText = () => {
                         </div>
                     </div>
 
-                    <div className="col-lg-6 p-25 md-mb-30">
+                    <div className="col-lg-6 p-25 md-mb-20">
                         <div className="img-part animated">
                             <img loading="lazy" className="about-main" src={AboutImage} alt="About" />
                         </div>

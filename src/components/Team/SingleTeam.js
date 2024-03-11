@@ -5,7 +5,7 @@ const SingleTeam = (props) => {
     const { teamClass, image, Title, Designation, isCovering } = props;
 
 	return(
-        <div className={teamClass ? teamClass + ' card-shadow-light' : 'team-item' + ' card-shadow-light'}>
+        <div className={(teamClass ? teamClass : 'team-item') + ' card-shadow-light'}>
             <Image 
                 src={image} 
                 alt={Title}

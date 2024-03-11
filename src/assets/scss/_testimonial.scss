@@ -1,15 +1,9 @@
 .rs-testimonial {
     &.style2 {
-        .donation-part {
-            img {
-                border-radius: 5px;
-                margin-bottom: 22px;
-            }
-        }
         .testi-wrap {
             overflow: hidden;
             background: $grayColor;
-            border-radius: 5px;
+            border-radius: 12px;
             padding: 30px;
             .img-part {
                 max-width: 209px;
@@ -21,7 +15,7 @@
             }
             .content-part {
                 .desc {
-                    font-size: 22px;
+                    font-size: 20px;
                     font-weight: 600;
                     line-height: 30px;
                     color: $titleColor2;
@@ -45,44 +39,14 @@
                         left: -30px;
                         top: -13px;
                     }
-                    &.title-color{
-                        color: $titleColor;
-                    }
                 }
                 .info {
                     margin-top: 20px;
                     color: $bodyColor;
                     .name {
+                        font-size: 18px;
                         margin: 0;
                         font-weight: 600;
-                    }
-                }
-                &.new-content{
-                    .desc {
-                        font-size: 22px;
-                        font-weight: 600;
-                        line-height: 30px;
-                        color: $titleColor;
-                        display: inline;
-                        position: relative;
-                        &:before,
-                        &:after {
-                            content: "\f151";
-                            font-family: Flaticon;
-                            font-size: 20px;
-                            color: $titleColor;
-                        }
-                        &:after {
-                            position: relative;
-                            bottom: -7px;
-                            right: -8px;
-                        }
-                        &:before {
-                            transform: rotateY(180deg);
-                            position: absolute;
-                            left: -30px;
-                            top: -13px;
-                        }
                     }
                 }
             }
@@ -94,25 +58,36 @@
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
+
         .testi-item {
             position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
             .author-desc {
-                padding: 70px 15px;
+                flex-grow: 1;
+                padding: 20px;
                 background-color: #171F3296;
                 border-radius: 18px;
-                min-height: 420px;
+                display: flex;
+
                 .desc {
+                    min-height: 100%;
+                    display: flex;
+                    align-items: center;
                     text-align: center;
                     position: relative;
                     color: $whiteColor;
-                    padding: 80px 40px 30px;
-                    font-size: 20px;
-                    line-height: 33px;
+                    padding: 70px 10px 30px;
+                    font-size: 18px;
+                    line-height: 30px;
                     font-weight: 500;
                     font-style: italic;
                     .quote {
-                        width: 66px;
-                        top: -13px;
+                        width: 55px;
+                        top: 0;
                         position: absolute;
                         left: 50%;
                         transform: translateX(-50%);
@@ -125,7 +100,7 @@
                     position: absolute;
                     left: 50%;
                     transform: translateX(-50%);
-                    bottom: 80px;
+                    bottom: 70px;
                     img {
                         width: auto;
                         border-radius: 50%;          
@@ -135,24 +110,21 @@
             }
             .author-part {
                 text-align: center;
-                padding-top: 45px;
+                padding-top: 60px;
                 .name {
-                    font-size: 20px;
+                    font-size: 18px;
                     font-weight: 700;
-                    line-height: 45px;
+                    line-height: 25px;
                     color: $whiteColor;
                     display: block;
+                    margin-bottom: 0;
+                    padding: 0;
                 }
                 .designation {
-                    font-size: 16px;
+                    font-size: 14px;
                     color: $whiteColor;
                 }
             }
-        }
-
-        .owl-stage-outer {
-            padding: 10px;
-            margin: -10px;
         }
     }
 }
@@ -167,22 +139,17 @@
         display: block;
         padding-right: 15px;
     }
-    .rs-testimonial.style2 .testi-wrap .content-part .info {
-        margin-top: 20px;
-    }
 }
 
 /* Tablet desktop :991px. */
 @media #{$md} {
-    .rs-testimonial.style2 .donation-part {
-        max-width: 600px;
-    }
     .rs-testimonial.style2 .testi-wrap .content-part .desc {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 18px;
     }
-    .rs-testimonial.style2 .testi-wrap .content-part .name {
-        font-size: 16px;
+    .rs-testimonial.style2 .testi-wrap .content-part .info .name {
+        margin-top: 10px;
+        font-size: 14px;
         line-height: 25px;
     }
 }
@@ -190,8 +157,8 @@
 /* Tablet :767px. */
 @media #{$sm} {
     .rs-testimonial.main-home .testi-item .author-desc .desc {
-        font-size: 18px;
-        padding: 65px 15px 15px;
+        font-size: 16px;
+        padding: 65px 0 30px;
         line-height: 25px;
     }
     .rs-testimonial.style2 .testi-wrap {
@@ -207,10 +174,6 @@
         margin-right: 0;
     }
     .rs-testimonial.style2 .testi-wrap .content-part {
-        padding: 25px;
-        padding-left: 40px;
-    }
-    .rs-testimonial.style2 .testi-wrap .content-part .info {
-        float: unset;
+        padding: 25px 15px 0 40px;
     }
 }

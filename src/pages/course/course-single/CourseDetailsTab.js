@@ -14,10 +14,10 @@ const CourseDetailsTab = () => {
             <Tabs>
                 <TabList className={tabStyle}>
                     <Tab>
-                        <button>{tab1}</button>
+                        <button className="cursor-pointer">{tab1}</button>
                     </Tab>
                     <Tab>
-                        <button>{tab2}</button>
+                        <button className="cursor-pointer">{tab2}</button>
                     </Tab>
                 </TabList>
 

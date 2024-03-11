@@ -9,10 +9,10 @@ const Cta = () => {
             <div className="partition-bg-wrap">
                 <div className="container">
                     <div className="row">
-                        <div className="offset-lg-6 col-lg-6 pl-70 md-pl-14">
+                        <div className="offset-lg-6 col-lg-6 pl-70 md-pl-20 md-pr-20">
                             <SectionTitle
-                                sectionClass="sec-title2 mb-40"
-                                titleClass="title white-color mb-16"
+                                sectionClass="sec-title mb-40"
+                                titleClass="title white-color mb-20"
                                 title="Միացիր հիմա - Ստացիր 5% զեղչ"
                                 descClass="desc white-color pr-100 md-pr-0"
                                 description="Ակտուալը մասնագիտացված ընկերություն է, որը տրամադրում է տարբեր ընկերությունների 

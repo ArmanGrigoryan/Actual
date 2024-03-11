@@ -29,7 +29,7 @@ const CourseSingle = () => {
             />
             <CourseDetailsPart />
 			<ScrollToTop />
-            <Newsletter />
+            <Newsletter containerClass="container xs-px-10" />
             <Footer
                 footerClass="rs-footer home9-style main-home"
                 footerLogo={footerLogo}

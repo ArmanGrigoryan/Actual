@@ -20,7 +20,7 @@ const HomePage = () =>  {
             />
             <Header parentMenu='home' />
             <HomeMain />
-            <Newsletter />
+            <Newsletter containerClass="container xs-px-10" />
             <Footer
                 footerClass="rs-footer home9-style main-home"
                 footerLogo={footerLogo}

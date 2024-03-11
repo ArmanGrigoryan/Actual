@@ -7,16 +7,18 @@ import {
     AccordionItemButton,
 } from 'react-accessible-accordion';
 
+const env = import.meta.env;
+
 const Faq = () => {
     const emailSubject = "Հետադարձ կապ";
     const emailBody = "Բարև Ձեզ, ցանկանանում եմ բաժանորդագրվել Ձեր ալիքին։";
 
     return (
-        <div className="rs-faq-part style1 pb-50 md-pb-20">
-            <div className="container">
+        <div className="rs-faq-part style1 pb-40 md-pb-20">
+            <div className="container p-0">
                 <div className="main-part innerpage radius-12">
                     <div className="faq-content mb-10">
-                        <h2 className='text-center mb-60'>Հաճախ տրվող հարցեր</h2>
+                        <h2 className='text-center mb-30'>Հաճախ տրվող հարցեր</h2>
                         <Accordion className="accordion-style1">
                             <AccordionItem className="accordion-item" uuid="a">
                                 <AccordionItemHeading className="card-header">
@@ -24,7 +26,7 @@ const Faq = () => {
                                         Ինչպիսի՞ դասընթացներ ունեք
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
-                                <AccordionItemPanel className="card-body">
+                                <AccordionItemPanel className="card-body xs-fs-14">
                                     <pre>
                                         {`Դասընթացները հետևյալն են՝
         - Մարդկային ռեսուրսների կառավարման դասընթաց սկսնակների համար,
@@ -33,7 +35,7 @@ const Faq = () => {
         - Բիզնես անգլերեն՝ եռամսյա հատուկ դասընթաց,
         - Excel և վերլուծությունը հատուկ դասընթաց:
 Մանրամասների համար զանգահարեք՝  `}
-                                        <a href="tel:(+374)44-30-30-28">(+374)44-30-30-28</a>
+                                        <a target="_top" href={`tel:${env.VITE_APP_CONTACT_PHONE}`}>{env.VITE_APP_CONTACT_PHONE}</a> 
                                     </pre>
                                 </AccordionItemPanel>
                             </AccordionItem>
@@ -43,7 +45,7 @@ const Faq = () => {
                                         Դասընթացի տևողությունը կասե՞ք
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
-                                <AccordionItemPanel className="card-body">
+                                <AccordionItemPanel className="card-body xs-fs-14">
                                     Դասընթացները տևողությունը 5 շաբաթ է, միայն շաբաթ օրերին։
                                 </AccordionItemPanel>
                             </AccordionItem>
@@ -53,7 +55,7 @@ const Faq = () => {
                                         Ինչու՞ հենց Ակտուալ
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
-                                <AccordionItemPanel className="card-body">
+                                <AccordionItemPanel className="card-body xs-fs-14">
                                     Ակտուալը տարիներ շարունակ թողարկել է նմանը չունեցող նախագծեր, որոնց արդյունքում ձևավորվել և աշխատաշուկայում իրենց ուրույն տեղն են գտել բազմաթիվ կադրեր։
                                 </AccordionItemPanel>
                             </AccordionItem>
@@ -63,7 +65,7 @@ const Faq = () => {
                                         Ինչպե՞ս կարող ենք ծանոթանալ դասավանդող մասնագետների որակավորմանը
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
-                                <AccordionItemPanel className="card-body">
+                                <AccordionItemPanel className="card-body xs-fs-14">
                                     Մասնագետների մասին տեղեկատվություն կարող եք ստանալ ընտրելով համապատասխան դասընթացը, դասավանդող բաԺնում։
                                 </AccordionItemPanel>
                             </AccordionItem>
@@ -73,7 +75,7 @@ const Faq = () => {
                                         Արդյո՞ք տրամադրվում է սերտիֆիկատ
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
-                                <AccordionItemPanel className="card-body">
+                                <AccordionItemPanel className="card-body xs-fs-14">
                                     Այո, դասընթացն ավարտելուն պես, ուսանողին տրամադրվում է համապատասխան մասնակցության վկայական։
                                 </AccordionItemPanel>
                             </AccordionItem>
@@ -83,7 +85,7 @@ const Faq = () => {
                                         Ի՞նչ կտա մեզ HR Management դասընթացը
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
-                                <AccordionItemPanel className="card-body">
+                                <AccordionItemPanel className="card-body xs-fs-14">
                                     Դասընթացը հնարավորություն կտա ստանալ համակարգված և ամբողջական պատկերացում/գիտելիքներ ՄՌԿ-ի տեսությունից մինչև պրակտիկ կիրառությունը տարբեր ոլորտներում։ Ծանոթացում ՄՌԿ գրեթե բոլոր գործառույթներին և շուկայում ընթացող միտումներին։
                                 </AccordionItemPanel>
                             </AccordionItem>
@@ -93,7 +95,7 @@ const Faq = () => {
                                         Պրակտիկայի հարցում օգնու՞մ եք
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
-                                <AccordionItemPanel className="card-body">
+                                <AccordionItemPanel className="card-body xs-fs-14">
                                     Այո, Ակտուալը համագործակցում է կազմակերպությունների հետ, որտեղ կարող եք անցնել ուսումնական պրակտիկա։
                                 </AccordionItemPanel>
                             </AccordionItem>
@@ -103,8 +105,8 @@ const Faq = () => {
                                         Դասընթացի արժեքը կասե՞ք
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
-                                <AccordionItemPanel className="card-body">
-                                    Դասընթացների արժեքները տարբեր են, Մանրամասների համար զանգահարեք՝  <a target='_top' href="tel:(+374)44-30-30-28">(+374)44-30-30-28</a>:
+                                <AccordionItemPanel className="card-body xs-fs-14">
+                                    Դասընթացների արժեքները տարբեր են, Մանրամասների համար զանգահարեք՝ <a target="_top" href={`tel:${env.VITE_APP_CONTACT_PHONE}`}>{env.VITE_APP_CONTACT_PHONE}</a>:
                                 </AccordionItemPanel>
                             </AccordionItem>
                             <AccordionItem className="accordion-item" uuid="f">
@@ -113,8 +115,8 @@ const Faq = () => {
                                         Որտե՞ղ է գտնվում Ակտուալը
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
-                                <AccordionItemPanel className="card-body">
-                                    Մեր հասցեն է՝ ք․ Երևան, Խանջյան 19։ 
+                                <AccordionItemPanel className="card-body xs-fs-14">
+                                    Մեր հասցեն է՝ {env.VITE_APP_CONTACT_ADDRESS}
                                 </AccordionItemPanel>
                             </AccordionItem>
                             <AccordionItem className="accordion-item" uuid="g">
@@ -123,8 +125,12 @@ const Faq = () => {
                                         Ինչպե՞ս կարող ենք տեղեկանալ առաջիկայում սպասվող նորություններին
                                     </AccordionItemButton>
                                 </AccordionItemHeading>
-                                <AccordionItemPanel className="card-body">
-                                    Կարող եք բաժանորդագրվել մեր ալիքին՝ <a target="_top" href={`mailto:info@actualhr.am?subject=${emailSubject}&body=${emailBody}`}>info@actualhr.am</a>, կամ զանգահարելով <a target="_top" href="tel:(+374)44-30-30-28">(+374)44-30-30-28</a> հեռախոսահամարին։
+                                <AccordionItemPanel className="card-body xs-fs-14">
+                                    Կարող եք բաժանորդագրվել մեր ալիքին՝ 
+                                    <a target="_top" href={`mailto:${env.VITE_APP_CONTACT_EMAIL}?subject=${emailSubject}&body=${emailBody}`}>{` ${env.VITE_APP_CONTACT_EMAIL} `}</a>, 
+                                    կամ զանգահարելով 
+                                    <a target="_top" href={`tel:${env.VITE_APP_CONTACT_PHONE}`}>{` ${env.VITE_APP_CONTACT_PHONE} `}</a> 
+                                    հեռախոսահամարին։
                                 </AccordionItemPanel>
                             </AccordionItem>
                         </Accordion>

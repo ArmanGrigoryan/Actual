@@ -5,11 +5,11 @@ const ContactForm = (props) => {
 
     return (
         <form id="contact-form" action="#" onSubmit={cb}>
-            <div className="row">
-                <div className="col-md-6 mb-30">
+            <div className="row justify-content-between gap-0">
+                <div className="col-md-6-gap min-col-6-gap mb-30">
                     <input
                         id="name" 
-                        className="from-control" 
+                        className="form-control" 
                         type="text" 
                         name="name" 
                         placeholder="Անուն" 
@@ -20,10 +20,10 @@ const ContactForm = (props) => {
                     />
                 </div>
 
-                <div className="col-md-6 mb-30">
+                <div className="col-md-6-gap min-col-6-gap mb-30">
                     <input
                         id="lastname" 
-                        className="from-control" 
+                        className="form-control" 
                         type="text" 
                         name="lastname" 
                         placeholder="Ազգանուն" 
@@ -34,10 +34,10 @@ const ContactForm = (props) => {
                     />
                 </div>
 
-                <div className="col-md-6 mb-30">
+                <div className="col-md-6-gap min-col-6-gap mb-30">
                     <input 
                         id="email" 
-                        className="from-control" 
+                        className="form-control" 
                         type="text" 
                         name="email" 
                         placeholder="Էլ. փոստ" 
@@ -48,10 +48,10 @@ const ContactForm = (props) => {
                     />
                 </div>
 
-                <div className="col-md-6 mb-30">
+                <div className="col-md-6-gap min-col-6-gap mb-30">
                     <input 
                         id="phone" 
-                        className="from-control" 
+                        className="form-control" 
                         type="text" 
                         name="phone" 
                         placeholder="Հեռ." 
@@ -65,7 +65,7 @@ const ContactForm = (props) => {
                 <div className="col-12 mb-30">
                     <textarea 
                         id="message" 
-                        className="from-control" 
+                        className="form-control" 
                         name="message" 
                         placeholder="Ձեր հաղորդագրությունը" 
                         required
@@ -76,7 +76,7 @@ const ContactForm = (props) => {
                 </div>
             </div>
             <div className="btn-part">
-                <button disabled={btnDisabled} className={submitBtnClass ? submitBtnClass : 'readon learn-more submit'} type="submit">{btnText}</button>
+                <button disabled={btnDisabled} className={submitBtnClass ? submitBtnClass : 'readon submit'} type="submit">{btnText}</button>
             </div>
         </form>
     );

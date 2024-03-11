@@ -17,10 +17,10 @@ const Event = () => {
 
     return (
         <div ref={animateRef} className="hidden-opacity">
-            {/* <SEO
+            <SEO
                 title={`${env.VITE_APP_APPLICATION_TITLE} | Ակտուալ Իվենթներ | Ակտուալ իրադարձություններ`}
                 description='Ծանոթացեք Ակտուալի իվենթներին։ Ստացեք տեղեկատվություն նմանը չունեցող Եվ յուրօրինակ The Master-ի, The voice of HR-ի հետ։'
-            /> */}
+            />
             <Header parentMenu='pages' />
             <SiteBreadcrumb
                 pageTitle="Ակտուալ Իվենթներ"
@@ -28,7 +28,7 @@ const Event = () => {
                 breadcrumbsImg={bannerbg}
             />
             <EventsSection />
-            <Newsletter />
+            <Newsletter containerClass="container wider md-max-w-unset pr-20 pl-20 xs-px-10" />
             <Footer
                 footerClass="rs-footer home9-style main-home"
                 footerLogo={footerLogo}

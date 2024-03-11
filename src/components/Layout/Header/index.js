@@ -27,7 +27,7 @@ const Header = (props) => {
 
 				<div className={`menu-area menu-sticky ${isVisible ? 'sticky' : ''}`}>
 					<div className="container">
-						<div className="row y-middle">
+						<div className="row align-items-center">
 							<div className="col-lg-3 pl-30">
 								<div className="logo-area hidden-md">
 									<Link to="/">

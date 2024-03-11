@@ -10,16 +10,16 @@ const Courses = () => {
     const { data, isFetched } = useQuery("courses", getCourses);
 
     return (
-        <div className="rs-popular-courses main-home event-bg pt-30 pb-50  md-pb-30">
-            <div className="container wider">
+        <div className="rs-popular-courses main-home event-bg pt-30 pb-40  md-pb-20">
+            <div className="container md-max-w-unset wider pr-20 pl-20 xs-px-10">
                 <SectionTitle
-                    sectionClass="sec-title2 text-center mb-20"
+                    sectionClass="sec-title text-center mb-20"
                     subtitleClass="sub-title mb-0"
                     subtitle="Դարձիր Ակտուալ անդամ"
                     title="Շտապիր գրանցվել"
                     titleClass="title black-color mb-30 xs-mb-20"
                 />
-                <div className="row gap-30 md-gap-20 mr-20 md-mr-10 ml-20 md-ml-10">
+                <div className="row gap-30 md-gap-20 md-justify-content-between">
                     {
                         isFetched ?
                         data.map(course => (

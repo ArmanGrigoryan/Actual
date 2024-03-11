@@ -9,7 +9,7 @@ const CourseSidebar = () => {
     const toggleModal = () => setIsOpen(!isOpen);
 
     return (
-        <div className="inner-column">
+        <div className="inner-column flex-column justify-content-between h-100 pl-20 md-pl-0 gap-20">
             {course.courseVideoUrl && <ModalVideo
                 videoUrl={course.courseVideoUrl}
                 videoWidth={course.courseVideoWidth}
@@ -26,14 +26,14 @@ const CourseSidebar = () => {
                     src={course.logo} 
                     alt="Video" 
                 />
-                <span className="popup-videos" onClick={toggleModal} >
+                <span className="span" onClick={toggleModal} >
                     <i className="fa fa-play"></i>
                 </span>
             </div>
             <div className="course-features-info radius-12">
                 <ul>
                     <li className="lectures-feature">
-                        <div>
+                        <div className="d-flex align-items-center">
                             <i className="fa fa-files-o"></i>
                             <span className="label">Դասախոսություններ</span>
                         </div>
@@ -41,7 +41,7 @@ const CourseSidebar = () => {
                     </li>
 
                     <li className="duration-feature">
-                        <div>
+                        <div className="d-flex align-items-center">
                             <i className="fa fa-clock-o"></i>
                             <span className="label">Տևողություն</span>
                         </div>
@@ -49,7 +49,7 @@ const CourseSidebar = () => {
                     </li>
 
                     <li className="weekly-feature">
-                        <div>
+                        <div className="d-flex align-items-center">
                             <i className="fa fa-book"></i>
                             <span className="label">Շաբաթական պարապմունքներ</span>
                         </div>
@@ -57,7 +57,7 @@ const CourseSidebar = () => {
                     </li>
 
                     <li className="students-feature">
-                        <div>
+                        <div className="d-flex align-items-center">
                             <i className="fa fa-users"></i>
                             <span className="label">Ուսանողներ</span>
                         </div>
@@ -65,7 +65,7 @@ const CourseSidebar = () => {
                     </li>
 
                     <li className="grads-feature">
-                        <div>
+                        <div className="d-flex align-items-center">
                             <i className="fa fa-check-square-o"></i>
                             <span className="label">Գնահատականներ</span>
                         </div>
@@ -73,7 +73,7 @@ const CourseSidebar = () => {
                     </li>
 
                     <li className="certificate-feature">
-                        <div>
+                        <div className="d-flex align-items-center">
                             <i className="fa fa-address-card-o"></i>
                             <span className="label">Սերտիֆիկատ</span>
                         </div>
@@ -81,10 +81,10 @@ const CourseSidebar = () => {
                     </li>
                 </ul>
             </div>
-            <div className="btn-part radius-12 mt-30">
+            <div className="btn-part radius-12">
                 {
                     !course.disabled ?
-                    <button className={`btn readon orange pointer-events-none ${course.singlePricing ? "bottom-text" : ""}`}>
+                    <button className={`btn readon orange pointer-events-none cursor-pointer ${course.singlePricing ? "bottom-text" : ""}`}>
                         { course.oldPrice && <span className='text-decoration-line-through h5 mr-10 d-inline-block'>{ course.oldPrice }</span> }
                         <span className='h5 mr-10'>{ course.price }</span> 
                         <span className='h6 mr-10 d-inline-block'>ՀՀ դրամ</span>
@@ -99,7 +99,7 @@ const CourseSidebar = () => {
                 <a 
                     href={course.courseLink} 
                     target='_blank' 
-                    className={`btn readon orange-white-transparent ${course.disabled ? "pointer-events-none" : ""}`}
+                    className={`btn gray-bg ${course.disabled ? "pointer-events-none" : ""}`}
                 >
                     {
                         !course.disabled ?

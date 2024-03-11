@@ -25,7 +25,7 @@ export default function Image({
     const expandHandler = () => setIsExpanded(true);
 
     return (
-        <div className={`image-popup-element relative max-height-inherit cursor-pointer ${hasDarkCloseIcon ? "darker" : ""}`} onClick={expandHandler}>
+        <div className={`image-popup-element relative w-100 max-height-inherit cursor-pointer ${hasDarkCloseIcon ? "darker" : ""}`} onClick={expandHandler}>
             {
                 textDescriptionComponent && isPreviewing ?
                     <div 

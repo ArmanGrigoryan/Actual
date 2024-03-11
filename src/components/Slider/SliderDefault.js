@@ -46,7 +46,7 @@ const SliderDefault = () => {
 
                         <div className="sl-btn">
                             <Link
-                                className="readon white-transparent large-scale orange-btn main-home mt-20 p-40 cursor-pointer" 
+                                className="readon white-transparent large-scale orange-btn main-home mt-20 cursor-pointer" 
                                 to="/course"
                             >
                                 Գրանցվել

@@ -16,7 +16,7 @@
     }
     &.style2 {
         .video-wrap {
-            .popup-videos {
+            .span {
                 color: $whiteColor;
                 display: block;
                 overflow: hidden;
@@ -175,9 +175,6 @@
 @media #{$mobile} {    
     .rs-cta.style2 .partition-bg-wrap:after {
         max-height: 375px;
-    }
-    .rs-cta .sec-title .title {
-        font-size: 23px;
     }
     .rs-cta.style2 .partition-bg-wrap.inner-page:after, 
     .rs-cta.style2 .partition-bg-wrap.inner-page:before {

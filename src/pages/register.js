@@ -27,7 +27,7 @@ const Register = () => {
                 pageName=""
                 breadcrumbsImg={bannerbg}
             />
-            <div className="register-section pt-50 pb-50 md-pt-30 md-pb-30">
+            <div className="register-section pt-40 pb-40 md-pt-20 md-pb-20">
                 <div className="container">
                     <div className="register-box">
                         <div className="sec-title text-center mb-30">
@@ -37,7 +37,7 @@ const Register = () => {
                             <div id="form-messages"></div>
                             <form id="contact-form" method="post" action="#">
                                 <div className="row clearfix">
-                                    <div className="form-group col-lg-12 mb-25">
+                                    <div className="form-group col-lg-12 mb-20">
                                         <input type="text" id="Name" name="First Name" value="" placeholder="Անուն" required />
                                     </div>
                                     <div className="form-group col-lg-12">
@@ -56,7 +56,7 @@ const Register = () => {
                                         <input type="text" id="Confirm" name="Confirm Password" value="" placeholder="Կրկնել գաղտնաբառը" required />
                                     </div>
                                     <div className="form-group col-lg-12 col-md-12 col-sm-12 text-center">
-                                        <button type="submit" className="readon register-btn"><span className="txt">Գրանցվել</span></button>
+                                        <button type="submit" className="readon register-btn cursor-pointer"><span className="txt">Գրանցվել</span></button>
                                     </div>
                                     <div className="form-group col-lg-12 col-md-12 col-sm-12">
                                         <div className="users text-center">Ունե՞ք հաշիվ: <Link className='ml-10 bold' to="/login">Մուտք</Link></div>

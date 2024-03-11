@@ -6,7 +6,7 @@ const ErrorContent = () => {
             <div className="error-text">
                 <h1 className="error-code">404</h1>
                 <h3 className="error-message">Էջը չի գտնվել</h3>
-                <Link className="readon cursor-pointer orange-btn" to="/">Վերադառնալ գլխավոր էջ</Link>
+                <Link className="readon cursor-pointer orange-btn primary-transparent mt-20" to="/">Վերադառնալ գլխավոր էջ</Link>
             </div>
         </div>
     );

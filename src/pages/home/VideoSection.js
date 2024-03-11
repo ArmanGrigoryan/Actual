@@ -23,7 +23,7 @@ const Videos = () => {
                     closeHandler={toggleModal}
                 />
 
-                <span className="popup-videos" onClick={toggleModal}>
+                <span className="span" onClick={toggleModal}>
                     <i className="fa fa-play"></i>
                 </span>
             </div>

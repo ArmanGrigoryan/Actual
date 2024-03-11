@@ -12,8 +12,8 @@ export default function withGalleryActions(Component) {
 
         return (
             <div className="gallery sec-title">
-                <div className="container">
-                    <h3 className="sub-title orange">Դարձիր Ակտուալի մի մասը</h3>
+                <div className="container xs-px-10">
+                    <h3 className="sub-title primary">Դարձիր Ակտուալի մի մասը</h3>
                     <h1 className="title">Արխիվ</h1>
                 </div>
 

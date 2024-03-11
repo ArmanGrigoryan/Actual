@@ -36,6 +36,7 @@ const CustomForm = () => {
                     onInvalid={evt => evt.target.setCustomValidity("Լրացրեք այս դաշտը")}
                 />
                 <button 
+                    className="cursor-pointer"
                     disabled={disabled} 
                     onClick={clickHandler(subscribe)}
                 >

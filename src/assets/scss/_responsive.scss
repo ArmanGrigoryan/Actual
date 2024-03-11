@@ -1,18 +1,3 @@
-/* Custom Container Width :1440px. */
-@media (min-width: 1440px) {
-    .container {
-        max-width: 1270px;
-        width: 100%;
-    }
-}
-
-/* XL Device :1366px. */
-@media #{$xl} {
-    .hidden-xl {
-        display: none !important;
-    }
-}
-
 /* Tablet desktop :768px. */
 @media #{$md} {
     .hidden-md {
@@ -20,9 +5,6 @@
     }
     .md-display-flex {
         display: flex !important;
-    }
-    .md-max-w-unset {
-        max-width: unset !important;
     }
     .md-flex-wrap {
         flex-wrap: wrap !important;

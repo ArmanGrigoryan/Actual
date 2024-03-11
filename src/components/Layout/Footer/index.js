@@ -13,7 +13,7 @@ const Footer = (props) => {
     const emailBody = "Բարև Ձեզ, ես ցանկանում եմ տեղեկանալ դասընթացների մասին ավելի մանրամասն։ Կարող եք զանգահարել՝ +374";
 
     useEffect(() => {
-        setTimeout(() => setVisible(true));
+        setTimeout(() => setVisible(true), 500);
     }, []);
 
     return (
@@ -39,22 +39,22 @@ const Footer = (props) => {
                                 <ul className="d-flex gap-20">
                                     <li className="d-flex">
                                         <a target="_blank" href={env.VITE_APP_SOCIAL_FB_URL} className="cursor-pointer">
-                                            <i className="fa fa-facebook-f position-static"></i>
+                                            <i className="fa fa-facebook-f"></i>
                                         </a>
                                     </li>
                                     <li className="d-flex">
                                         <a target="_blank" href={env.VITE_APP_SOCIAL_IG_URL}>
-                                            <i className="fa fa-instagram position-static"></i>
+                                            <i className="fa fa-instagram"></i>
                                         </a>
                                     </li>
                                     <li className="d-flex">
                                         <a target="_blank" href={env.VITE_APP_SOCIAL_TG_URL}>
-                                            <i className="fa fa-telegram position-static"></i>
+                                            <i className="fa fa-telegram"></i>
                                         </a>
                                     </li>
                                     <li className="d-flex">
                                         <a target="_blank" href={env.VITE_APP_SOCIAL_YT_URL}>
-                                            <i className="fa fa-youtube position-static"></i>
+                                            <i className="fa fa-youtube"></i>
                                         </a>
                                     </li>
                                 </ul>
@@ -69,8 +69,8 @@ const Footer = (props) => {
             </div>
 
             <div className="footer-bottom">
-                <div className="container wider m-0">
-                    <div className="row y-middle">
+                <div className="container wider">
+                    <div className="row align-items-center">
                         <div className='legal-links'>
                             <div className="col-lg-6 text-left">
                                 <ul className="copy-right-menu">

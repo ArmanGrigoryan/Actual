@@ -14,17 +14,17 @@ const ContentSection = () => {
     const toggleModal = () => setIsOpen(!isOpen);
 
     return (
-        <div className="intro-section gray-bg pt-50 pb-0 md-pt-30 loaded">
-            <div className="container">
-                <div className="row clearfix">
-                    <div className="col-lg-8 md-mb-30">
-                        <div className="intro-info-tabs white-bg p-30 xs-px-20 xs-py-30 radius-12">
+        <div className="intro-section gray-bg pt-40 pb-0 md-pt-20 loaded">
+            <div className="container xs-px-10">
+                <div className="row clearfix mb-20 xs-px-10">
+                    <div className="col-lg-8 md-mb-20">
+                        <div className="intro-info-tabs white-bg p-30 xs-px-20 xs-py-20 radius-12">
                             <HtmlText html={event.html} />
                         </div>
                     </div>
 
                     <div className="video-column col-lg-4">
-                        <div className="inner-column">
+                        <div className="inner-column flex-column justify-content-between h-100 pl-20 md-pl-0 gap-20">
                             <ModalVideo
                                 videoWidth={event.eventVideoWidth}
                                 videoHeight={event.eventVideoHeight}
@@ -41,7 +41,7 @@ const ContentSection = () => {
                                     src={event.logo} 
                                     alt="Video" 
                                 />
-                                <span to="" className="popup-videos" onClick={toggleModal} >
+                                <span className="span" onClick={toggleModal} >
                                     <i className="fa fa-play"></i>
                                 </span>
                             </div>

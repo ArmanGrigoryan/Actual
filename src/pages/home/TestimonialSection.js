@@ -3,38 +3,17 @@ import SectionTitle from 'comp/Common/SectionTitle';
 import SingleTestimonial from 'comp/Testimonial/SingleTestimonial';
 import quote from 'media/testimonial/2.svg';
 import female from 'media/icon/female.png';
+import { HomepageTestimonialSettings as testimonialSettings } from 'helpers';
 
 const Slider = React.lazy(() => import("react-slick"));
 
 const Testimonial = () => {
 
-    const testimonialSettings = {
-        dots: true,
-        centerMode: false,
-        infinite: true,
-        draggable: false,
-        autoplay: true,
-        autoplaySpeed: 8000,
-        arrows: false,
-        lazyLoad: true,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 1,
-                    dots: false,
-                }
-            }
-        ]
-    };
-
     return (
-        <div className="rs-testimonial main-home pt-50 pb-50  md-pb-30">
+        <div className="rs-testimonial main-home pt-40 pb-40  md-pb-20">
             <div className="container">
                 <SectionTitle
-                    sectionClass="sec-title2 mb-50 md-mb-30 text-center"
+                    sectionClass="sec-title mb-40 md-mb-10 text-center"
                     subtitleClass="sub-title primary"
                     subtitle=""
                     titleClass="title white-color"
@@ -49,7 +28,7 @@ const Testimonial = () => {
                             authorImage={female}
                             Title="Լուսինե Մանուկյան"
                             Designation="ՄՌԿ մասնագետ"
-                            Description="Ոչ միայն խորհուրդ կտամ մասնակցել , այլև ես ինքս մեծ սիրով կրկին կմասնակցեմ Ակտուալի կողմից անցկացվելիք դասընթացներին..."
+                            Description="Ոչ միայն խորհուրդ կտամ մասնակցել, այլև ես ինքս մեծ սիրով կրկին կմասնակցեմ Ակտուալի կողմից անցկացվելիք դասընթացներին..."
                         />
                         <SingleTestimonial
                             itemClass="testi-item"

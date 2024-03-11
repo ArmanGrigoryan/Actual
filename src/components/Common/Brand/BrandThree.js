@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Marquee from 'react-fast-marquee';
 import BrandItem from './Item';
 import brand1 from 'media/partners/Mersoft.png';
@@ -12,6 +12,7 @@ import brand8 from 'media/partners/PAK.png';
 
 const BrandThree = (props) => {
     const { brandBg, brandClass } = props;
+    const [visible, setVisible] = useState(false);
 
     const brandBgStyle = {
         backgroundImage: `url(${brandBg ? brandBg : ''})`
@@ -21,11 +22,15 @@ const BrandThree = (props) => {
         backgroundColor: 'transparent'
     }
 
-    return (
-        <div className={brandClass ? brandClass : 'rs-partner style2 pt-50 md-pt-30'} style={brandBg ? brandBgStyle : brandBgDefaultStyle}>
-            <h2 className='title'>Ակտուալի գործընկերները</h2>
+    useEffect(() => {
+        setTimeout(() => setVisible(true), 1000);
+    }, []);
 
-            <Marquee>
+    return (
+        <div className={brandClass ? brandClass : 'rs-partner sec-title style2 pt-40 md-pt-20'} style={brandBg ? brandBgStyle : brandBgDefaultStyle}>
+            <h2 className='title text-center mb-20'>Ակտուալի գործընկերները</h2>
+
+            { visible && <Marquee>
                 <BrandItem src={brand1} />
                 <BrandItem src={brand2} />
                 <BrandItem src={brand3} />
@@ -42,7 +47,7 @@ const BrandThree = (props) => {
                 <BrandItem src={brand6} />
                 <BrandItem src={brand7} />
                 <BrandItem src={brand8} />
-            </Marquee>
+            </Marquee> }
         </div>
     );
 }

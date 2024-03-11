@@ -1,12 +1,11 @@
 .container,
 .container-fluid {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
     width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * .5);
-    padding-left: calc(var(--bs-gutter-x) * .5);
     margin-right: auto;
     margin-left: auto
+}
+.container.wider {
+    max-width: 800px;
 }
 
 .w-100 {
@@ -96,6 +95,11 @@ p {
     .col-md-4 {
         flex: 0 0 auto;
         width: 33.33333333%
+    }
+
+    .col-md-4-gap {
+        flex: 0 0 auto;
+        width: calc(33.33333333% - 15px);
     }
 
     .col-md-6 {
@@ -211,6 +215,10 @@ p {
 @media (min-width:1400px) {
 
     .container {
-        max-width: 1320px
+        max-width: 1320px;
+
+        &.wider {
+            max-width: 1400px;
+        }
     }
 }

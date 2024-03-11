@@ -98,12 +98,6 @@
                         &:hover {
                             opacity: 0.8;
                         }
-                        &.primary {
-                            color: $primaryColor;
-                        }
-                        &.secondary {
-                            color: $secondaryColor;
-                        }
                     }
                     &.fixed-width {
                         max-width: 720px;

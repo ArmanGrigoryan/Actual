@@ -9,7 +9,7 @@
         .react-tabs__tab {
             display: block;
             text-align: center;
-            opacity: .75;
+            opacity: .9;
 
             &:not(:last-child) {
                 margin-bottom: 30px;
@@ -26,7 +26,7 @@
                 line-height: 20px;
                 text-align: center;
                 color: $whiteColor;
-                background: $titleColor7;
+                background: $titleColor3;
                 transition: $transition;
                 .icon-part {
                     display: block;
@@ -54,14 +54,6 @@
             }
             &:last-item {
                 margin-bottom: 0;
-            }
-        }
-    }
-
-    .rs-counter {
-        .counter-item {
-            img {
-                max-width: 100px;
             }
         }
     }

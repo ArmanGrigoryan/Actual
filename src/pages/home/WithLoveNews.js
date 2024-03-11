@@ -13,11 +13,11 @@ const WithLoveNews = ({ openPreviewHandler }) => {
     const { data, isFetched } = useQuery("news", getNews);
 
     return (
-        <div className="rs-featured-news pt-50 md-pt-30 pb-70 xs-pb-20">
+        <div className="light-bg pt-40 md-pt-20 pb-70 xs-pb-20">
             <div className="container-fluid">
                 <SectionTitle
-                    sectionClass="sec-title2 text-center"
-                    subtitleClass="sub-title uppercase mb-10"
+                    sectionClass="sec-title text-center"
+                    subtitleClass="sub-title mb-10"
                     subtitle="Ծանոթացեք նորություններին"
                     titleClass="title mb-10"
                     title="Սիրով՝ Ակտուալից"

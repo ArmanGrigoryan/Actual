@@ -56,11 +56,11 @@ const AboutTab = () => {
     }, [tab])
 
     return (
-        <div className="rs-about style1 pt-50 pb-50 md-pt-30 md-pb-30">
+        <div className="rs-about style1 pt-40 pb-40 md-pt-20 md-pb-20">
             <div className="container">
                 <Tabs>
-                    <div className="row align-items-center">
-                        <div className="col-lg-6 p-25 md-mb-30 relative">
+                    <div className="row align-items-center xs-px-20 md-mr-20 md-ml-20 xs-mx-0">
+                        <div className="col-lg-6 p-25 md-mb-20 relative">
                             <div className={`img-part text-center ${tab === tab2 ? "higher" : ""}`}>
                                 {
                                     tab === tab2 ? 
@@ -72,20 +72,20 @@ const AboutTab = () => {
                             </div>
                             <TabList className={tabStyle}>
                                 <Tab onClick={() => setTab(tab1)}>
-                                    <button><span className="icon-part"><i className="flaticon-banknote"></i></span>{tab1}</button>
+                                    <button className="cursor-pointer"><span className="icon-part"><i className="flaticon-banknote"></i></span>{tab1}</button>
                                 </Tab>
                                 <Tab onClick={() => setTab(tab2)}>
-                                    <button><span className="icon-part"><i className="flaticon-flower"></i></span>{tab2}</button>
+                                    <button className="cursor-pointer"><span className="icon-part"><i className="flaticon-flower"></i></span>{tab2}</button>
                                 </Tab>
                                 <Tab onClick={() => setTab(tab3)}>
-                                    <button><span className="icon-part"><i className="flaticon-analysis"></i></span>{tab3}</button>
+                                    <button className="cursor-pointer"><span className="icon-part"><i className="flaticon-analysis"></i></span>{tab3}</button>
                                 </Tab>
                             </TabList>
                         </div>
-                        <div className="col-lg-6 pl-50 md-pl-14">
+                        <div className="col-lg-6 pl-50 md-pl-0">
                             <TabPanel>
                                 <div className="about-history">
-                                    <div className="sec-title mb-24">
+                                    <div className="sec-title mb-20">
                                         <h2 className="title">Ակտուալի Գործունեությունը</h2>
                                         <div className="desc">Դասընթացներ: Մենք իրականացնում ենք դասընթացներ ինչպես անհատների այնպես էլ կորպորատիվ փաթեթների շրջանակում: բիզնես անգլերենի, Մարդկային ռեսուրսների կառավարման և համակարգչային գիտելիքների վերազինման դասընթացներ: Ավելի քան  500 մասնակից արդեն հասցրել են գիտելիքներով վերազինվել մեր ընկերության օգնությամբ:</div>
                                         <div className="desc">Աութսորս ուղղվածությունը մեր ընկերության ամենադինամիկ աճ ապահովող կողմներից է: Մեր արհեստավարժ թիմը ամբողջ աշխատաժամանակով գործունեություն կծավալի ձեր բիզնեսում, ներդնելով՝ ՄՌԿ ստանդարտներ, կորպորատիվ մշակույթ, արժեհամակարգ և այն ամենը ինչը առնչվում է մարդկային ռեսուրսների կառավարման գործիքակազմին: Աութսորս ծառայության համար գործում են տարբեր փաթեթներ, որոնք տեղայնացվում են տվյալ բիզնեսի կատարողականին</div>
@@ -95,7 +95,7 @@ const AboutTab = () => {
                             </TabPanel>
                             <TabPanel>
                                 <div className="about-mission">
-                                    <div className="sec-title mb-24">
+                                    <div className="sec-title mb-20">
                                         <h2 className="title">Ակտուալի տեսլականը</h2>
                                         <div className="desc">«Ակտուալ» մարդկային ռեսուրսների կառավարման գործակալության նպատակն է ՀՀ-ում գործող
                                             կազմակերպություններին մասնագիտական և փորձի վրա հիմնված ծառայություններ մատուցելը:
@@ -119,7 +119,7 @@ const AboutTab = () => {
                             </TabPanel>
                             <TabPanel>
                                 <div className="about-admin">
-                                    <div className="sec-title mb-24">
+                                    <div className="sec-title mb-20">
                                         <h2 className="title">ԱՄԵՆԱՄՅԱ ՄԻՋՈՑԱՌՈՒՄՆԵՐ</h2>
                                         <div className="desc">Ակտուալը, իր գործունեության ընթացքում, իրականացրել և իրականացնում է երկու կարևոր, ամենամյա միջոցառումներ, որոնց ունեն հատուկ նշանակություն և նպատակ
                                             <ol className="list">

@@ -18,7 +18,7 @@ const HomeMain = () => {
 			<Cta />
 			<FaqSection />
 			<Testimonial />
-			<BrandThree brandClass='rs-partner pb-50 pt-50 sec-title2' />
+			<BrandThree brandClass='rs-partner pb-40 pt-40 sec-title' />
 			<ScrollToTop />
 		</>
 	);

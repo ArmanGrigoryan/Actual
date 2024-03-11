@@ -9,13 +9,15 @@ import {
 import { Link } from 'react-router-dom';
 import ModalVideo from 'comp/Elements/ModalVideo';
 
+const env = import.meta.env;
+
 const FaqSection = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleModal = () => setIsOpen(!isOpen);
 
     return (
-        <div className="rs-faq-part style1 orange-style pt-50 pb-50 md-pt-30 md-pb-30">
+        <div className="rs-faq-part style1  pt-40 pb-40 md-pt-20 md-pb-20">
             <ModalVideo
                 videoUrl="https://www.youtube.com/embed/yb9Qrzx1eMU?autoplay=1&start=0&vq=hd720"
                 isOpen={isOpen}
@@ -24,10 +26,10 @@ const FaqSection = () => {
 
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 padding-0">
-                        <div className="main-part h-100 h-full">
-                            <div className="title mb-40 md-mb-14">
-                                <h2 className="text-part">Հաճախ տրվող հարցեր</h2>
+                    <div className="col-lg-6 p-0">
+                        <div className="main-part h-100 h-full sec-title">
+                            <div className="mb-30 md-mb-15">
+                                <h2 className="title">Հաճախ տրվող հարցեր</h2>
                             </div>
                             <div className="faq-content">
                                 <Accordion className="accordion-style1" preExpanded={'h'}>
@@ -37,7 +39,7 @@ const FaqSection = () => {
                                                 Ինչու՞ հենց Ակտուալ
                                             </AccordionItemButton>
                                         </AccordionItemHeading>
-                                        <AccordionItemPanel className="card-body">
+                                        <AccordionItemPanel className="card-body xs-fs-14">
                                             Ակտուալը տարիներ շարունակ թողարկել է նմանը չունեցող նախագծեր, որոնց արդյունքում ձևավորվել և աշխատաշուկայում իրենց ուրույն տեղն են գտել բազմաթիվ կադրեր։
                                         </AccordionItemPanel>
                                     </AccordionItem>
@@ -48,7 +50,7 @@ const FaqSection = () => {
                                                 Ինչպիսի՞ դասընթացներ ունեք
                                             </AccordionItemButton>
                                         </AccordionItemHeading>
-                                        <AccordionItemPanel className="card-body">
+                                        <AccordionItemPanel className="card-body xs-fs-14">
                                             <pre>
                                                 {`Դասընթացները հետևյալն են՝
         - Մարդկային ռեսուրսների կառավարման դասընթաց սկսնակների համար,
@@ -57,7 +59,7 @@ const FaqSection = () => {
         - Բիզնես անգլերեն՝ եռամսյա հատուկ դասընթաց,
         - Excel և վերլուծությունը հատուկ դասընթաց:
 Մանրամասների համար զանգահարեք՝  `}
-                                                <a href="tel:(+374)44-30-30-28">(+374)44-30-30-28</a>
+                                                <a target="_top" href={`tel:${env.VITE_APP_CONTACT_PHONE}`}>{env.VITE_APP_CONTACT_PHONE}</a>
                                             </pre>
                                         </AccordionItemPanel>
                                     </AccordionItem>
@@ -68,7 +70,7 @@ const FaqSection = () => {
                                                 Պրակտիկայի հարցում օգնու՞մ եք
                                             </AccordionItemButton>
                                         </AccordionItemHeading>
-                                        <AccordionItemPanel className="card-body">
+                                        <AccordionItemPanel className="card-body xs-fs-14">
                                             Այո, Ակտուալը համագործակցում է կազմակերպությունների հետ, որտեղ կարող եք անցնել ուսումնական պրակտիկա։
                                         </AccordionItemPanel>
                                     </AccordionItem>
@@ -79,7 +81,7 @@ const FaqSection = () => {
                                                 Որտե՞ղ է գտնվում Ակտուալը
                                             </AccordionItemButton>
                                         </AccordionItemHeading>
-                                        <AccordionItemPanel className="card-body">
+                                        <AccordionItemPanel className="card-body xs-fs-14">
                                             Մեր հասցեն է ք․ Երևան, Խանջյան 19։ 
                                         </AccordionItemPanel>
                                     </AccordionItem>
@@ -87,16 +89,16 @@ const FaqSection = () => {
                                 
                                 <div className='blog-button text-right mt-20'>
                                     <Link to="/about" className="blog-btn">
-                                        Ավելին
+                                        ավելին
                                     </Link>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className={`col-lg-6 padding-0 ${isOpen ? "z-index-1" : ""}`}>
+                    <div className={`col-lg-6 p-0 ${isOpen ? "z-index-1" : ""}`}>
                         <div className={`img-part media-icon orange-color ${isOpen ? "overlay" : ""}`}>
-                            <div className="popup-videos" onClick={toggleModal}><i className="fa fa-play"></i></div>
+                            <div className="span" onClick={toggleModal}><i className="fa fa-play"></i></div>
                         </div>
                     </div>
                 </div>

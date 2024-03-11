@@ -6,22 +6,20 @@ import ReviewPart from './ReviewPart';
 const CourseDetailsPart = () => {
 
     return (
-        <>
-            <div className="intro-section gray-bg pt-50 pb-50 md-pt-30 md-pb-30 loaded">
-                <div className="container">
-                    <div className="row clearfix">
-                        <div className="col-lg-8 md-mb-30">
-                            <CourseDetailsTab />
-                        </div>
-                        <div className="video-column col-lg-4">
-                            <CourseSidebar />
-                        </div>
+        <div className="intro-section gray-bg pt-40 pb-40 md-pt-20 md-pb-20 loaded">
+            <div className="container">
+                <div className="row clearfix mb-20 xs-px-10">
+                    <div className="col-lg-8 md-mb-20">
+                        <CourseDetailsTab />
                     </div>
-
-                    <ReviewPart />
+                    <div className="video-column col-lg-4">
+                        <CourseSidebar />
+                    </div>
                 </div>
+
+                <ReviewPart />
             </div>
-        </>
+        </div>
     )
 }
 

@@ -29,7 +29,7 @@ const Course = () => {
             />
 			<Courses />
 			<ScrollToTop />
-            <Newsletter />
+            <Newsletter containerClass="container wider md-max-w-unset pr-20 pl-20 xs-px-10" />
             <Footer
                 footerClass="rs-footer home9-style main-home"
                 footerLogo={footerLogo}
